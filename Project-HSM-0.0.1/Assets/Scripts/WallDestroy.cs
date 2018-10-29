@@ -2,22 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletLogic : MonoBehaviour {
-    Rigidbody rb;
-    public float bulletspeed = 300;
+public class WallDestroy : MonoBehaviour {
+    public GameObject BrokenWall;
 
 	// Use this for initialization
 	void Start () {
-        rb = GetComponent<Rigidbody>();
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        rb.AddForce(transform.forward * bulletspeed);
+		
 	}
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        if(collision.gameObject.tag == "Bullet")
+        {
+            Instantiate(BrokenWall,transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     }
 }

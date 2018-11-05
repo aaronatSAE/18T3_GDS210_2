@@ -11,11 +11,11 @@ public class BulletLogic : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
 	}
 	
-	// Update is called once per frame
+	// constantly moving the bullet forward
 	void Update () {
         rb.AddForce(transform.forward * bulletspeed);
 	}
-
+    //destory bullet on collision
     private void OnCollisionEnter(Collision collision)
     {
         Destroy(gameObject);

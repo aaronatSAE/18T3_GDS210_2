@@ -4,17 +4,7 @@ using UnityEngine;
 
 public class WallDestroy : MonoBehaviour {
     public GameObject BrokenWall;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+    // checks if a bullet collided with wall, if it did destroy the wall and create a broken wall
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Bullet")

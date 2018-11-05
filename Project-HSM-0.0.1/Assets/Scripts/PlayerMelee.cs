@@ -12,7 +12,7 @@ public class PlayerMelee : MonoBehaviour
     WeaponControl weaponControl;
     PlayerAmmo playerAmmo;
 
-    // Use this for initialization
+    // finds gameobjects and set booleans
     void Start ()
     {
         AmmoCount = GameObject.Find("AmmoCount");
@@ -22,7 +22,7 @@ public class PlayerMelee : MonoBehaviour
         meleeSpawn = false;
     }
 	
-	// Update is called once per frame
+	// checks if player has meet the requirements to use the Yo-Yo weapon
 	void Update () {
         if(Input.GetMouseButton(0) && playerAmmo.meleeAmmoCount > 0 && weaponControl.Weapon == 2)
         {

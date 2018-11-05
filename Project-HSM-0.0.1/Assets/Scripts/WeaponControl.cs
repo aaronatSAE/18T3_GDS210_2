@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class WeaponControl : MonoBehaviour {
     public float Weapon;
     public Text WeaponText;
-
+    
+    //sets default weapon information to water gun
     private void Start()
     {
         Weapon = 1;
@@ -14,7 +15,7 @@ public class WeaponControl : MonoBehaviour {
         WeaponText.text = "Water Gun";
     }
 
-    // Update is called once per frame
+    // retrieves player input and changes the active weapon the player is using
     void Update () {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {

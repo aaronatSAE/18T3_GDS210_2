@@ -9,7 +9,7 @@ public class PlayerShoot : MonoBehaviour {
     WeaponControl weaponControl;
     PlayerAmmo playerAmmo;
 
-	// Use this for initialization
+	// Find gameobjects
 	void Start () {
         AmmoCount = GameObject.Find("AmmoCount");
         ActiveWeapon = GameObject.Find("ActiveWeapon");
@@ -17,7 +17,7 @@ public class PlayerShoot : MonoBehaviour {
         playerAmmo = AmmoCount.GetComponent<PlayerAmmo>();
 	}
 	
-	// Update is called once per frame
+	// Checks if the player meets the requirements to use the water gun
 	void Update ()
     {
         if (Input.GetMouseButtonDown(0) && playerAmmo.gunAmmoCount > 0)

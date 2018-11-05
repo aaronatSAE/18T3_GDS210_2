@@ -11,7 +11,7 @@ public class PlayerAmmo : MonoBehaviour
     public GameObject ActiveWeapon;
     WeaponControl weaponControl;
 
-    // Use this for initialization
+    // Set default ammo count as well as find certain gameobjects
     void Start () {
         gunAmmoCount = 20;
         meleeAmmoCount = 10;
@@ -20,7 +20,7 @@ public class PlayerAmmo : MonoBehaviour
         ammoText = GetComponent<Text>();
     }
 	
-	// Update is called once per frame
+	// changes UI information
 	void Update () {
         if(weaponControl.Weapon == 1)
         {

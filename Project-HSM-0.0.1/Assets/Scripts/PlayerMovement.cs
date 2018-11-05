@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
+    // Basic player movement
     void Update () {
         x = Input.GetAxis("Horizontal") * Time.deltaTime * turnrate;
         z = Input.GetAxis("Vertical") * Time.deltaTime * movespeed;
@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             rb.AddForce(transform.up * jumpheight);
         }
-        if( x == 1)
+        if(x == 1)
         {
             transform.Rotate(0, 90, 0);
         }

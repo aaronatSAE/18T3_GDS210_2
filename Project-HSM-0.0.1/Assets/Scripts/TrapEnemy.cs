@@ -3,24 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyTrap : MonoBehaviour
+public class TrapEnemy : MonoBehaviour
 {
     GameObject player;
-    HealthDisplay healthDisplay;
     CapsuleCollider capsuleCollider;
     NavMeshAgent nav;
     PlayerMovement playerMovement;
-    float trapLength;
-    float trapTimer;
-    float respawnLength;
-    float respawnTimer;
-    bool disabled;
+    public float trapLength;
+    public float trapTimer;
+    public float respawnLength;
+    public float respawnTimer;
+    public bool disabled;
 
     // Use this for initialization
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        healthDisplay = GameObject.Find("PlayerHealth").GetComponent<HealthDisplay>();
         capsuleCollider = GetComponent<CapsuleCollider>();
         playerMovement = player.GetComponent<PlayerMovement>();
         nav = GetComponent<NavMeshAgent>();
@@ -38,26 +36,27 @@ public class EnemyTrap : MonoBehaviour
         {
             if (disabled == false)
             {
-                playerMovement.enabled = false;
+                playerMovement.movement = false;
                 capsuleCollider.enabled = false;
                 nav.isStopped = true;
                 disabled = true;
             }
-            trapTimer -= Time.deltaTime;
-            respawnTimer -= Time.deltaTime;
-            if (trapTimer <= 0)
+            if (trapTimer <= 0 && disabled == true)
             {
-                playerMovement.enabled = true;
-                trapTimer = trapLength;
-                print("run");
+                playerMovement.movement = true;
             }
-            if (respawnTimer <= 0)
-            {
-                nav.isStopped = false;
-                capsuleCollider.enabled = true;
-                respawnTimer = respawnLength;
-                disabled = false;
-            }
+        }
+        
+        respawnTimer -= Time.deltaTime;
+        trapTimer -= Time.deltaTime;
+
+        if (respawnTimer <= 0 && disabled == true)
+        {
+            nav.isStopped = false;
+            capsuleCollider.enabled = true;
+            respawnTimer = respawnLength;
+            trapTimer = trapLength;
+            disabled = false;
         }
     }
 }

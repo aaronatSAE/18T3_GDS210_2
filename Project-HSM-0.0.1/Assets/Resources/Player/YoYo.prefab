@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 23369574962021602}
   - component: {fileID: 65582916364359746}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: YoYo
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

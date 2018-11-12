@@ -100,9 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 0
-  starterMelee: 0
-  starterTrapper: 0
-  starterRanged: 0
+  starterMelee: 2
+  starterTrapper: 1
+  starterRanged: 1
 --- !u!114 &114142130405880328
 MonoBehaviour:
   m_ObjectHideFlags: 1

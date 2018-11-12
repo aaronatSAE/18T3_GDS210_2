@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+  - SpeedUp
+  - HealthUp
+  - MeleeEnemy
+  - RangedEnemy
+  - TrapperEnemy
   layers:
   - Default
   - TransparentFX

@@ -23,6 +23,10 @@ public class PlayerMovement : MonoBehaviour {
         {
             z = Input.GetAxis("Vertical") * Time.deltaTime * movespeed;
         }
+        if(movement == false)
+        {
+            z = 0;
+        }
         transform.Translate(0, 0, z);
         transform.Rotate(0, x, 0);
         if(x == 1)

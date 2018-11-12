@@ -25,9 +25,10 @@ GameObject:
   - component: {fileID: 114805255053401874}
   - component: {fileID: 114246163599959514}
   - component: {fileID: 195774686440156230}
+  - component: {fileID: 114399890701156402}
   m_Layer: 0
-  m_Name: EnemyTrapper
-  m_TagString: Untagged
+  m_Name: TrapperEnemy
+  m_TagString: TrapperEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +99,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ac3a73a08151545a9072b9792387c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114399890701156402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758555051448544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a1f1ec523703f41afb19aa098ff284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  starterMelee: 0
+  starterTrapper: 0
+  starterRanged: 0
 --- !u!114 &114805255053401874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,6 +125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e19d79863592846a9e6664cda48d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trapLength: 0
+  trapTimer: 0
+  respawnLength: 0
+  respawnTimer: 0
+  disabled: 0
 --- !u!136 &136087810889092644
 CapsuleCollider:
   m_ObjectHideFlags: 1

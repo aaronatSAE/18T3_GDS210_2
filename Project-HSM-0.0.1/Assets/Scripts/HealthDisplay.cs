@@ -4,13 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour {
-
+    public float startingHealth;
     public float playerHealth;
     public Text healthUI;
+    public Vector3 respawnPoint;
+    GameObject player;
 
 	// Use this for initialization
 	void Start () {
-        playerHealth = 10;
+        player = GameObject.Find("Player");
+        respawnPoint = new Vector3(0, 1, 0);
+        startingHealth = 10;
+        playerHealth = startingHealth;
         healthUI = GameObject.Find("PlayerHealth").GetComponent<Text>();
 
 	}
@@ -20,7 +25,8 @@ public class HealthDisplay : MonoBehaviour {
         healthUI.text = "Health : " + playerHealth.ToString();
         if(playerHealth <= 0)
         {
-            print("player dead");
+            player.transform.position = respawnPoint;
+            playerHealth = startingHealth;
         }
 	}
 }

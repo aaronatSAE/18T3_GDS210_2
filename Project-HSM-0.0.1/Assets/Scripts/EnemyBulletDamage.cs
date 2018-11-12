@@ -14,7 +14,7 @@ public class EnemyBulletDamage : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.tag == "Player")
+        if (collision.collider.tag == "Player")
         {
             healthDisplay.playerHealth -= 1;
         }

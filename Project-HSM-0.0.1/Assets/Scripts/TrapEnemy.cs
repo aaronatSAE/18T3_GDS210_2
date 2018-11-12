@@ -9,6 +9,7 @@ public class TrapEnemy : MonoBehaviour
     CapsuleCollider capsuleCollider;
     NavMeshAgent nav;
     PlayerMovement playerMovement;
+    Rigidbody rigidPlayer;
     public float trapLength;
     public float trapTimer;
     public float respawnLength;

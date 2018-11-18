@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33257254086694332}
   - component: {fileID: 23660033057264522}
   - component: {fileID: 65783035235154114}
-  - component: {fileID: 114562380211983482}
+  - component: {fileID: 114838692900254940}
   m_Layer: 0
   m_Name: Relic
   m_TagString: SpeedUp
@@ -171,7 +171,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114562380211983482
+--- !u!114 &114838692900254940
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1662881910409200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be93900596a903f4a8a05ad6dfdec226, type: 3}
+  m_Script: {fileID: 11500000, guid: de580163395ed9f458f3cbc8de8182ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &135999273564589388

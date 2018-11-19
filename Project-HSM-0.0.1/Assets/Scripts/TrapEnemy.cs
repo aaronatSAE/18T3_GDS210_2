@@ -47,7 +47,15 @@ public class TrapEnemy : MonoBehaviour
                 playerMovement.movement = true;
             }
         }
-        
+
+        if (Vector3.Distance(player.transform.position, transform.position) >= 2.5f)
+        {
+            playerMovement.movement = true;
+            capsuleCollider.enabled = true;
+            nav.isStopped = false;
+            disabled = false;
+        }
+
         respawnTimer -= Time.deltaTime;
         trapTimer -= Time.deltaTime;
 

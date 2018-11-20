@@ -6,56 +6,37 @@ public class PlayerMove : MonoBehaviour
 {
     float x;
     float z;
-    public float movespeed = 5;
-    public float turnrate;
-    public float jumpheight = 10;
     Rigidbody rb;
     public bool movement;
+    CharacterController chara;
+    Vector3 direction;
+    float speed;
 
     private void Start()
     {
+        chara = GetComponent<CharacterController>();
         movement = true;
+        speed = 5;
     }
 
     // Basic player movement
     void Update()
     {
-        z = Input.GetAxis("Vertical");
-        if (z > 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        if (z < 0)
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
-        x = Input.GetAxis("Horizontal");
-        if (x < 0)
-        {
-            transform.eulerAngles = new Vector3(0, -90, 0);
-        }
-        if (x > 0)
-        {
-            transform.eulerAngles = new Vector3(0, 90, 0);
-        }
+        direction = new Vector3(Input.GetAxis("Horizontal"),0, Input.GetAxis("Vertical"));
+        direction = transform.TransformDirection(direction);
+        direction = direction * speed;
+        print(direction);
         if (movement == true)
         {
-            if (z >= 0.5f || z <= -0.5f || x >= 0.5f || x <= -0.5f)
+            if (direction.x >= 0.1f || direction.y >= 0.1)
             {
-                transform.Translate(0, 0, 0.1f);
+                chara.Move(direction * Time.deltaTime);
             }
-            //if (z != 0 || x != 0)
-            //{
-            //    transform.Translate(0, 0, 0.1f);
-            //}
         }
         if (movement == false)
         {
             z = 0;
             x = 0;
-        }
-        if (x == 1)
-        {
         }
     }
 }

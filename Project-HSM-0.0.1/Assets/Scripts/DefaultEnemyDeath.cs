@@ -9,7 +9,7 @@ public class DefaultEnemyDeath : MonoBehaviour {
     public float starterMelee;
     public float starterTrapper;
     public float starterRanged;
-
+    //checks what enemy and sets health
     private void Start()
     {
         if(gameObject.tag == "MeleeEnemy")
@@ -30,7 +30,7 @@ public class DefaultEnemyDeath : MonoBehaviour {
             enemyHealth = starterRanged;
         }
     }
-
+    //checks if player weapon is colliding with enemy
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == "Bullet")
@@ -38,8 +38,16 @@ public class DefaultEnemyDeath : MonoBehaviour {
             enemyHealth -= 1;
         }
     }
-    
 
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "Bullet")
+        {
+            enemyHealth -= 1;
+        }
+    }
+
+    //start coroutine depending on what enemy
     private void Update()
     {
         if(enemyHealth <= 0)
@@ -63,7 +71,7 @@ public class DefaultEnemyDeath : MonoBehaviour {
             }
         }
     }
-
+    //turns off enemy movement and after 10 second the enemy can move again
     IEnumerator Melee()
     {
         MeleeEnemyAttack meleeComponent;

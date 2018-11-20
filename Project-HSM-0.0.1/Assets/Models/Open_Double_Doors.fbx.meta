@@ -1,67 +1,54 @@
 fileFormatVersion: 2
-guid: 75cb667b26be6b4439b5590736ace0da
+guid: ff45fb4482cab65488d8ee737f483bdc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pasted__pCube10
-    100004: pasted__pCube11
-    100006: pasted__pCube12
-    100008: pasted__pCube13
-    100010: pasted__pCube3
-    100012: pasted__pCube4
-    100014: pasted__pCube5
-    100016: pasted__pCube7
-    100018: pasted__pCube8
-    100020: pasted__pCube9
-    100022: pasted__Walls_Building
+    100002: pCube1
+    100004: pCube2
+    100006: pCube3
+    100008: pCylinder1
+    100010: pCylinder2
+    100012: pCylinder3
+    100014: pCylinder4
+    100016: pCylinder5
+    100018: pCylinder6
+    100020: pCylinder7
+    100022: transform1
+    100024: transform2
+    100026: transform3
+    100028: transform4
+    100030: transform5
+    100032: transform6
+    100034: transform7
+    100036: transform8
     400000: //RootNode
-    400002: pasted__pCube10
-    400004: pasted__pCube11
-    400006: pasted__pCube12
-    400008: pasted__pCube13
-    400010: pasted__pCube3
-    400012: pasted__pCube4
-    400014: pasted__pCube5
-    400016: pasted__pCube7
-    400018: pasted__pCube8
-    400020: pasted__pCube9
-    400022: pasted__Walls_Building
-    2100000: lambert1
-    2100002: pasted__Brick_Wall1
-    2300000: pasted__pCube10
-    2300002: pasted__pCube11
-    2300004: pasted__pCube12
-    2300006: pasted__pCube13
-    2300008: pasted__pCube3
-    2300010: pasted__pCube4
-    2300012: pasted__pCube5
-    2300014: pasted__pCube7
-    2300016: pasted__pCube8
-    2300018: pasted__pCube9
-    2300020: pasted__Walls_Building
-    3300000: pasted__pCube10
-    3300002: pasted__pCube11
-    3300004: pasted__pCube12
-    3300006: pasted__pCube13
-    3300008: pasted__pCube3
-    3300010: pasted__pCube4
-    3300012: pasted__pCube5
-    3300014: pasted__pCube7
-    3300016: pasted__pCube8
-    3300018: pasted__pCube9
-    3300020: pasted__Walls_Building
-    4300000: pasted__Walls_Building
-    4300002: pasted__pCube3
-    4300004: pasted__pCube4
-    4300006: pasted__pCube5
-    4300008: pasted__pCube7
-    4300010: pasted__pCube8
-    4300012: pasted__pCube9
-    4300014: pasted__pCube10
-    4300016: pasted__pCube11
-    4300018: pasted__pCube12
-    4300020: pasted__pCube13
+    400002: pCube1
+    400004: pCube2
+    400006: pCube3
+    400008: pCylinder1
+    400010: pCylinder2
+    400012: pCylinder3
+    400014: pCylinder4
+    400016: pCylinder5
+    400018: pCylinder6
+    400020: pCylinder7
+    400022: transform1
+    400024: transform2
+    400026: transform3
+    400028: transform4
+    400030: transform5
+    400032: transform6
+    400034: transform7
+    400036: transform8
+    2100000: blinn1
+    2100002: lambert1
+    2300000: pCube3
+    2300002: pCylinder7
+    3300000: pCube3
+    3300002: pCylinder7
+    4300000: pCube3
+    4300002: pCylinder7
   externalObjects: {}
   materials:
     importMaterials: 1

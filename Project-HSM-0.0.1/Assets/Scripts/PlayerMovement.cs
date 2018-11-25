@@ -1,37 +1,42 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class PlayerMovement : MonoBehaviour {
-    float x;
-    float z;
-    public float movespeed = 5;
-    public float turnrate;
-    public float jumpheight = 10;
-    Rigidbody rb;
+public class PlayerMovement : MonoBehaviour
+{
+    public float speed;
+    public float jumpSpeed;
+    public float gravityMulti;
     public bool movement;
+    public float movespeed;
+    Vector3 gravity;
 
-    private void Start()
+    private Vector3 moveDirection = Vector3.zero;
+    private CharacterController controller;
+
+    void Start()
     {
-        movement = true;
+        movespeed = 1;
+        movement = true; 
+        controller = GetComponent<CharacterController>();
+        speed = 6;
+        gravityMulti = 20;
+       
     }
 
-    // Basic player movement
-    void Update () {
-        x = Input.GetAxis("Horizontal") * Time.deltaTime * turnrate;
-        if (movement == true)
+    void Update()
+    {
+        if (controller.isGrounded)
         {
-            z = Input.GetAxis("Vertical") * Time.deltaTime * movespeed;
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+            transform.rotation = Quaternion.LookRotation(moveDirection);
+            moveDirection = moveDirection * speed;
+            if(movement == true)
+            {
+                transform.Translate(moveDirection * Time.deltaTime * movespeed, Space.World);
+            }
         }
-        if(movement == false)
-        {
-            z = 0;
-        }
-        transform.Translate(0, 0, z);
-        transform.Rotate(0, x, 0);
-        if(x == 1)
-        {
-            transform.Rotate(0, 90, 0);
-        }
-	}
+        
+        gravity.y = gravity.y - (gravityMulti * Time.deltaTime);
+        controller.Move(gravity * Time.deltaTime);
+    }
 }

@@ -24,7 +24,7 @@ public class PlayerMelee : MonoBehaviour
 	
 	// checks if player has meet the requirements to use the Yo-Yo weapon
 	void Update () {
-        if(Input.GetMouseButton(0) && playerAmmo.meleeAmmoCount > 0 && weaponControl.Weapon == 2)
+        if(Input.GetKeyDown(KeyCode.Space) && playerAmmo.meleeAmmoCount > 0 && weaponControl.Weapon == 2)
         {
             playerAmmo.meleeAmmoCount = playerAmmo.meleeAmmoCount - Time.deltaTime;
             if (meleeSpawn == false)

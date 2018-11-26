@@ -13,9 +13,9 @@ public class RelicPickUp : MonoBehaviour {
         relicCount = relicLeft.GetComponent<RelicCount>();
 	}
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.name == "Player")
+        if(other.tag == "Player")
         {
             Destroy(gameObject);
         }

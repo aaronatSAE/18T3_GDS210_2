@@ -52,23 +52,7 @@ public class DefaultEnemyDeath : MonoBehaviour {
     {
         if(enemyHealth <= 0)
         {
-            if (gameObject.tag == "MeleeEnemy")
-            {
-                StartCoroutine("Melee");
-                enemyHealth = starterMelee;
-            }
-
-            if (gameObject.tag == "RangedEnemy")
-            {
-                StartCoroutine("Range");
-                enemyHealth = starterRanged;
-            }
-
-            if (gameObject.tag == "TrapperEnemy")
-            {
-                StartCoroutine("Trap");
-                enemyHealth = starterTrapper;
-            }
+            Destroy(gameObject);
         }
     }
     //turns off enemy movement and after 10 second the enemy can move again

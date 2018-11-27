@@ -5,18 +5,19 @@ using UnityEngine;
 public class EnemyBulletDamage : MonoBehaviour
 {
     HealthDisplay healthDisplay;
+    [SerializeField] private float bulletDamage = 1;
 
-    // Use this for initialization
+    // finds the health of the player
     void Start () {
         healthDisplay = GameObject.Find("PlayerHealth").GetComponent<HealthDisplay>();
     }
 
-    // Update is called once per frame
+    // if the gameobject collides with the player remove health from the player;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == "Player")
         {
-            healthDisplay.playerHealth -= 1;
+            healthDisplay.playerHealth -= bulletDamage;
         }
     }
 }

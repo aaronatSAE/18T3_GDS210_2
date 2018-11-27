@@ -3,26 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OffScreenSpawner : MonoBehaviour {
-    public float timer = 10;
-    public Vector3 spawn;
-    public GameObject[] enemies;
+    [SerializeField] private float timer = 10;
+    [SerializeField] private Vector3 spawn;
+    [SerializeField] private GameObject[] enemies;
+    private float scriptTimer;
     GameObject player;
-    public Ray ray;
+    [SerializeField] private Ray ray;
 
-    // Use this for initialization
+    // makes a array and puts the 3 enemy types into the array as well as finding the player
     void Start () {
         enemies = new GameObject[3];
         enemies[0] = Resources.Load<GameObject>("Enemy/MeleeEnemy");
         enemies[1] = Resources.Load<GameObject>("Enemy/TrapperEnemy");
         enemies[2] = Resources.Load<GameObject>("Enemy/RangedEnemy");
         player = GameObject.Find("Player");
+        scriptTimer = timer;
     }
 	
-	// Update is called once per frame
+    //randomly spawn enemies offscreen
 	void Update () {
-        timer -= Time.deltaTime;
+        //timer for spawning the enemies
+        scriptTimer -= Time.deltaTime;
+        //when the timer reaches 0 spawn a enemy
         if(timer <= 0)
         {
+            //randomly gets a location offscreen
             float ran = Random.Range(0, 2) * 2 - 1;
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(ran, ran));
             spawn = ray.GetPoint(10);
@@ -42,8 +47,10 @@ public class OffScreenSpawner : MonoBehaviour {
             {
                 spawn.z += 5;
             }
+            //spawn enemy
             Instantiate(enemies[Random.Range(0, 3)], spawn, Quaternion.identity);
-            timer = 10;
+            //reset timer
+            scriptTimer = timer;
         }
 	}
 }

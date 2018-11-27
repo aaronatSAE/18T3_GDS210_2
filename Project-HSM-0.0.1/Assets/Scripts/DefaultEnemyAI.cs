@@ -7,14 +7,14 @@ public class DefaultEnemyAI : MonoBehaviour {
     NavMeshAgent nav;
     GameObject player;
 
-	// Use this for initialization
+	// finds the player and the NavMeshAgent attached to the gameobject
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         nav = GetComponent<NavMeshAgent>();
 
     }
 	
-	// Update is called once per frame
+	// Sets the destination of the NavMeshAgent to the player's location
 	void Update () {
         nav.destination = player.transform.position;
     }

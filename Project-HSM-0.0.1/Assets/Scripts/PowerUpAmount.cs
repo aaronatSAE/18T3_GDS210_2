@@ -6,21 +6,19 @@ using UnityEngine.UI;
 public class PowerUpAmount : MonoBehaviour {
     public float speedUp;
     public float healthUp;
-    public float activePowerUp;
-    public float previousPowerUp;
+    public float activePowerUp = 1;
+    [SerializeField] private float previousPowerUp;
 
-	// Use this for initialization
+	// makes the values of previousPowerUp equal to activePowerUp
 	void Start () {
-        speedUp = 0;
-        healthUp = 0;
-        activePowerUp = 1;
         previousPowerUp = activePowerUp;
 	}
 	
-	// Update is called once per frame
 	void Update () {
+        //alternates between the 2 power ups when the player presses tab
         if (Input.GetKeyDown(KeyCode.Tab))
         {
+            print("run");
             if(previousPowerUp != 2 && activePowerUp == 1)
             {
                 activePowerUp += 1;
@@ -31,7 +29,7 @@ public class PowerUpAmount : MonoBehaviour {
                 activePowerUp -= 1;
             }
         }
-
+        //updates the UI so that player can know what power is being used currently
 		if(activePowerUp == 1)
         {
             Text speedText;

@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 114809345170968810}
   - component: {fileID: 114260778263177822}
   - component: {fileID: 114151154887863384}
+  - component: {fileID: 136919365700047222}
   m_Layer: 0
   m_Name: RangedEnemy
   m_TagString: RangedEnemy
@@ -336,6 +337,19 @@ CapsuleCollider:
   m_GameObject: {fileID: 1300606668263034}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!136 &136919365700047222
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1300606668263034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2

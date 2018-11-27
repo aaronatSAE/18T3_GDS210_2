@@ -7,9 +7,9 @@ public class PlayerAmmo : MonoBehaviour
 {
     public float gunAmmoCount;
     public float meleeAmmoCount;
-    public Text ammoText;
-    public GameObject ActiveWeapon;
-    WeaponControl weaponControl;
+    private Text ammoText;
+    private GameObject ActiveWeapon;
+    private WeaponControl weaponControl;
 
     // Set default ammo count as well as find certain gameobjects
     void Start () {
@@ -24,15 +24,18 @@ public class PlayerAmmo : MonoBehaviour
 	void Update () {
         if(weaponControl.Weapon == 1)
         {
+            //displays the ammo count for the gun
             ammoText.text = gunAmmoCount.ToString();
         }
 
         if(weaponControl.Weapon == 2)
         {
+            //displays the ammo count for the Yo-Yo
             ammoText.text = meleeAmmoCount.ToString();
         }
         if(weaponControl.Weapon != 2 && meleeAmmoCount < 10)
         {
+            //if the player is not using the Yo-Yo the ammo for the Yo-Yo recharges
             meleeAmmoCount = meleeAmmoCount + (Time.deltaTime / 2);
         }
     }

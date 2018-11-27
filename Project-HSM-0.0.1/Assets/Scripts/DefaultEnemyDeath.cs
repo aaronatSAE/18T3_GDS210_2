@@ -6,9 +6,9 @@ using UnityEngine.AI;
 public class DefaultEnemyDeath : MonoBehaviour {
     
     public float enemyHealth;
-    public float starterMelee;
-    public float starterTrapper;
-    public float starterRanged;
+    [SerializeField] private float starterMelee;
+    [SerializeField] private float starterTrapper;
+    [SerializeField] private float starterRanged;
     //checks what enemy and sets health
     private void Start()
     {
@@ -39,15 +39,7 @@ public class DefaultEnemyDeath : MonoBehaviour {
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.tag == "Bullet")
-        {
-            enemyHealth -= 1;
-        }
-    }
-
-    //start coroutine depending on what enemy
+    //destroy the enemy, if the enemy has no health
     private void Update()
     {
         if(enemyHealth <= 0)

@@ -7,12 +7,12 @@ public class OpenDoor : MonoBehaviour {
     private float distanceFromPlayer;
     [SerializeField] private float openDistance = 3;
 
-	// Use this for initialization
+	// finds player
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
-	// Update is called once per frame
+	// destory the gameobject if the player is within range and presses the interact button
 	void Update () {
         distanceFromPlayer = Vector3.Distance(player.transform.position, transform.position);
 		if(distanceFromPlayer <= openDistance && Input.GetKeyDown(KeyCode.E))

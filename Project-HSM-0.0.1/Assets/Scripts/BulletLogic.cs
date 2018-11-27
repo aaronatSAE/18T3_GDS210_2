@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletLogic : MonoBehaviour {
-    Rigidbody rb;
-    public float bulletspeed = 300;
+    private Rigidbody rb;
+    [SerializeField] private float bulletspeed = 300;
 
-	// Use this for initialization
+	// finds rigidbody component attached to the gameobject
 	void Start () {
         rb = GetComponent<Rigidbody>();
 	}

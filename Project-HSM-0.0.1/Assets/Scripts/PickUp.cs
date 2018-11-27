@@ -4,27 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour {
+    
+    private PowerUpAmount powerUpAmount;
 
-    GameObject powerUp;
-    PowerUpAmount powerUpAmount;
-    Text speedUpText;
-
-	// Use this for initialization
+	// find the power-up component
 	void Start () {
-        powerUp = GameObject.Find("PowerUp");
-        powerUpAmount = powerUp.GetComponent<PowerUpAmount>();
+        powerUpAmount = GameObject.Find("PowerUp").GetComponent<PowerUpAmount>();
 	}
-
-    private void OnCollisionEnter(Collision collision)
+    //checks when the gameobject collides with the player
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.name == "Player")
+        if (other.gameObject.tag == "Player")
         {
+            //when the gameobject collides with the player destroy the gameobject
             Destroy(gameObject);
         }
     }
-
+    //when the gameobject is destroy add power-up ammo corresponding to the power-up picked up
     private void OnDestroy()
     {
+        //checks the tag of the gameobject so ammo can be correctly allocated
         if(gameObject.tag == "SpeedUp")
         {
             powerUpAmount.speedUp += 1;

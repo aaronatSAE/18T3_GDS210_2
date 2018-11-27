@@ -3,18 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour {
-    public GameObject bullet;
-    public GameObject ActiveWeapon;
-    public GameObject AmmoCount;
-    WeaponControl weaponControl;
-    PlayerAmmo playerAmmo;
+    [SerializeField] private GameObject bullet;
+    private WeaponControl weaponControl;
+    private PlayerAmmo playerAmmo;
 
 	// Find gameobjects
 	void Start () {
-        AmmoCount = GameObject.Find("AmmoCount");
-        ActiveWeapon = GameObject.Find("ActiveWeapon");
-        weaponControl = ActiveWeapon.GetComponent<WeaponControl>();
-        playerAmmo = AmmoCount.GetComponent<PlayerAmmo>();
+        weaponControl = GameObject.Find("ActiveWeapon").GetComponent<WeaponControl>();
+        playerAmmo = GameObject.Find("AmmoCount").GetComponent<PlayerAmmo>();
 	}
 	
 	// Checks if the player meets the requirements to use the water gun
@@ -22,6 +18,7 @@ public class PlayerShoot : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Space) && playerAmmo.gunAmmoCount > 0)
         {
+            //reduce ammo count and spawn a bullet
             if(weaponControl.Weapon == 1)
             {
                 playerAmmo.gunAmmoCount -= 1;

@@ -5,31 +5,28 @@ using UnityEngine.UI;
 
 public class PowerUpUse : MonoBehaviour
 {
-
-    GameObject powerUp;
-    GameObject player;
-    GameObject playerHealth;
+    [SerializeField] private float moveSpeedUp = 2f;
+    [SerializeField] private float speedUpDuration = 15f;
     PlayerMovement playerMovement;
     PowerUpAmount powerUpAmount;
     HealthDisplay healthDisplay;
 
-    // Use this for initialization
+    // find components needed
     void Start()
     {
-        playerHealth = GameObject.Find("PlayerHealth");
-        healthDisplay = playerHealth.GetComponent<HealthDisplay>();
-        powerUp = GameObject.Find("PowerUp");
-        powerUpAmount = powerUp.GetComponent<PowerUpAmount>();
-        player = GameObject.Find("Player");
-        playerMovement = player.GetComponent<PlayerMovement>();
+        healthDisplay = GameObject.Find("PlayerHealth").GetComponent<HealthDisplay>();
+        powerUpAmount = GameObject.Find("PowerUp").GetComponent<PowerUpAmount>();
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
-
-    // Update is called once per frame
+    
     void Update () {
+        //checks what the active power up is
 		if(powerUpAmount.activePowerUp == 1)
         {
+            //when the player presses the enter key and there is ammo for the correponding power up use it
             if (Input.GetKeyDown(KeyCode.Return) && powerUpAmount.speedUp >= 1)
             {
+                //run a coroutine which increase the speed of the player before removing 1 ammo of the power up
                 StartCoroutine("SpeedIncrease");
                 powerUpAmount.speedUp -= 1;
             }
@@ -39,6 +36,7 @@ public class PowerUpUse : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return) && powerUpAmount.healthUp >= 1)
             {
+                //sets the player's health to full and then remove 1 ammo of the power up
                 healthDisplay.playerHealth = 10;
                 powerUpAmount.healthUp -= 1;
             }
@@ -48,10 +46,13 @@ public class PowerUpUse : MonoBehaviour
 
     IEnumerator SpeedIncrease()
     {
+        //retrieves the movespeed value
         float starterSpeed;
         starterSpeed = playerMovement.movespeed;
-        playerMovement.movespeed = 2;
-        yield return new WaitForSeconds(15f);
+        //increase the movespeed
+        playerMovement.movespeed = moveSpeedUp;
+        //after a set amount of time reset the speed
+        yield return new WaitForSeconds(speedUpDuration);
         playerMovement.movespeed = starterSpeed;
     }
 }

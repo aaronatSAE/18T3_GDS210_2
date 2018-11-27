@@ -7,16 +7,14 @@ public class RangedEnemyAttack : MonoBehaviour {
     RaycastHit hit;
     GameObject player;
     NavMeshAgent nav;
-    public GameObject enemyBullet;
-    float attackDistance;
+    GameObject enemyBullet;
+    [SerializeField] private float attackDistance = 5f;
     GameObject bulletSpawn;
     public bool shooting;
-
-    // Use this for initialization
+    
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         nav = GetComponent<NavMeshAgent>();
-        attackDistance = 5f;
         enemyBullet = Resources.Load<GameObject>("Enemy/EnemyBullet");
         bulletSpawn = GameObject.Find("EnemyBulletSpawn");
         shooting = false;

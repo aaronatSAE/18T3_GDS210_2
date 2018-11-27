@@ -4,15 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PortalOut : MonoBehaviour {
-    public string scene;
-
-	// Use this for initialization
-	void Start () {
-	}
-
-    private void OnCollisionStay(Collision collision)
+    [SerializeField] private string scene;
+    //switches scenes when player is inside of the gameobject
+    private void OnTriggerStay(Collider other)
     {
-        if(collision.collider.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             print("run");
             SceneManager.LoadSceneAsync(scene, LoadSceneMode.Single);

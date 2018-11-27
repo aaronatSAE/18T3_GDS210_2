@@ -23,9 +23,19 @@ public class YoYoLogic : MonoBehaviour {
     // checks if the Yo-Yo is colliding with a wall, if it is the Yo-Yo will slow move towards the player
     private void OnTriggerStay(Collider other)
     {
+        //if the Yo-Yo hit the wall, the Yo-Yo will slowly get pushed back towards the player
         if(other.gameObject.tag == "Wall")
         {
             transform.position = Vector3.Lerp(transform.position, player.transform.position, 0.01f);
+        }
+        //if the Yo-Yo hits a enemy, the enemy will take damage
+        if(other.gameObject.tag == "RangedEnemy" ||
+            other.gameObject.tag == "MeleeEnemy" ||
+            other.gameObject.tag == "TrapperEnemy")
+        {
+            DefaultEnemyDeath death;
+            death = other.GetComponent<DefaultEnemyDeath>();
+            death.enemyHealth -= 1;
         }
     }
 }

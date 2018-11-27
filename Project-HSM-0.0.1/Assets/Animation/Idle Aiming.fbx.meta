@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b428da12c29ac0b40a52497faa679bfd
+guid: dd3781b2e1933d0418337df4c7356ad6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -135,7 +135,7 @@ ModelImporter:
     400126: mixamorig:Spine
     400128: mixamorig:Spine1
     400130: mixamorig:Spine2
-    7400000: Flying Back
+    7400000: Idle Aiming
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -166,17 +166,17 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Flying Back
+      name: Idle Aiming
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 181
+      lastFrame: 126
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

@@ -710,6 +710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4633774549612732}
   - component: {fileID: 95155853044026460}
+  - component: {fileID: 114384362932144052}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -2685,6 +2686,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114384362932144052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562936689752028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff399abb8b8aaba4280156d617a5dd42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &137685653688694176
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

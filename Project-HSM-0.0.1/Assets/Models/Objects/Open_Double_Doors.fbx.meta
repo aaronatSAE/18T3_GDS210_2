@@ -1,29 +1,54 @@
 fileFormatVersion: 2
-guid: 5a6575c6839eb814a904c868015b7aef
+guid: 026012a838a2de04fb50e8e9a444c083
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: imagePlane1
-    100004: pCylinder1
-    100006: pPlane1
-    100008: pSphere3
+    100002: pCube1
+    100004: pCube2
+    100006: pCube3
+    100008: pCylinder1
+    100010: pCylinder2
+    100012: pCylinder3
+    100014: pCylinder4
+    100016: pCylinder5
+    100018: pCylinder6
+    100020: pCylinder7
+    100022: transform1
+    100024: transform2
+    100026: transform3
+    100028: transform4
+    100030: transform5
+    100032: transform6
+    100034: transform7
+    100036: transform8
     400000: //RootNode
-    400002: imagePlane1
-    400004: pCylinder1
-    400006: pPlane1
-    400008: pSphere3
-    2100000: lambert2
-    2300000: pCylinder1
-    2300002: pPlane1
-    2300004: pSphere3
-    3300000: pCylinder1
-    3300002: pPlane1
-    3300004: pSphere3
-    4300000: pCylinder1
-    4300002: pSphere3
-    4300004: pPlane1
-    2186277476908879412: ImportLogs
+    400002: pCube1
+    400004: pCube2
+    400006: pCube3
+    400008: pCylinder1
+    400010: pCylinder2
+    400012: pCylinder3
+    400014: pCylinder4
+    400016: pCylinder5
+    400018: pCylinder6
+    400020: pCylinder7
+    400022: transform1
+    400024: transform2
+    400026: transform3
+    400028: transform4
+    400030: transform5
+    400032: transform6
+    400034: transform7
+    400036: transform8
+    2100000: blinn1
+    2100002: lambert1
+    2300000: pCube3
+    2300002: pCylinder7
+    3300000: pCube3
+    3300002: pCylinder7
+    4300000: pCube3
+    4300002: pCylinder7
   externalObjects: {}
   materials:
     importMaterials: 1

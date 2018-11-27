@@ -52,86 +52,8 @@ public class DefaultEnemyDeath : MonoBehaviour {
     {
         if(enemyHealth <= 0)
         {
-            if (gameObject.tag == "MeleeEnemy")
-            {
-                StartCoroutine("Melee");
-                enemyHealth = starterMelee;
-            }
-
-            if (gameObject.tag == "RangedEnemy")
-            {
-                StartCoroutine("Range");
-                enemyHealth = starterRanged;
-            }
-
-            if (gameObject.tag == "TrapperEnemy")
-            {
-                StartCoroutine("Trap");
-                enemyHealth = starterTrapper;
-            }
+            Destroy(gameObject);
         }
     }
-    //turns off enemy movement and after 10 second the enemy can move again
-    IEnumerator Melee()
-    {
-        MeleeEnemyAttack meleeComponent;
-        CapsuleCollider colide;
-        NavMeshAgent nav;
-        DefaultEnemyAI defaultEnemyAI;
-        nav = GetComponent<NavMeshAgent>();
-        meleeComponent = GetComponent<MeleeEnemyAttack>();
-        colide = GetComponent<CapsuleCollider>();
-        defaultEnemyAI = GetComponent<DefaultEnemyAI>();
-        meleeComponent.enabled = false;
-        colide.enabled = false;
-        nav.enabled = false;
-        defaultEnemyAI.enabled = false;
-        yield return new WaitForSeconds(10f);
-        meleeComponent.enabled = true;
-        colide.enabled = true;
-        nav.enabled = true;
-        defaultEnemyAI.enabled = true;
-    }
-
-    IEnumerator Range()
-    {
-        RangedEnemyAttack rangedComponent;
-        CapsuleCollider colide;
-        NavMeshAgent nav;
-        DefaultEnemyAI defaultEnemyAI;
-        nav = GetComponent<NavMeshAgent>();
-        rangedComponent = GetComponent<RangedEnemyAttack>();
-        colide = GetComponent<CapsuleCollider>();
-        defaultEnemyAI = GetComponent<DefaultEnemyAI>();
-        rangedComponent.enabled = false;
-        colide.enabled = false;
-        nav.enabled = false;
-        defaultEnemyAI.enabled = false;
-        yield return new WaitForSeconds(10f);
-        rangedComponent.enabled = true;
-        colide.enabled = true;
-        nav.enabled = true;
-        defaultEnemyAI.enabled = true;
-    }
-
-    IEnumerator Trap()
-    {
-        TrapEnemy trapComponent;
-        CapsuleCollider colide;
-        NavMeshAgent nav;
-        DefaultEnemyAI defaultEnemyAI;
-        nav = GetComponent<NavMeshAgent>();
-        trapComponent = GetComponent<TrapEnemy>();
-        colide = GetComponent<CapsuleCollider>();
-        defaultEnemyAI = GetComponent<DefaultEnemyAI>();
-        trapComponent.enabled = false;
-        colide.enabled = false;
-        nav.enabled = false;
-        defaultEnemyAI.enabled = false;
-        yield return new WaitForSeconds(10f);
-        trapComponent.enabled = true;
-        colide.enabled = true;
-        nav.enabled = true;
-        defaultEnemyAI.enabled = true;
-    }
+   
 }

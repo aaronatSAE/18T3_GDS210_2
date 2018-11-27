@@ -4,16 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour {
-    public float startingHealth;
+    [SerializeField] private float startingHealth;
     public float playerHealth;
-    public Text healthUI;
-    public Vector3 respawnPoint;
-    GameObject player;
+    private Text healthUI;
+    [SerializeField] private GameObject respawnPoint;
+    private GameObject player;
 
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
-        respawnPoint = new Vector3(0, 1, 0);
         startingHealth = 10;
         playerHealth = startingHealth;
         healthUI = GameObject.Find("PlayerHealth").GetComponent<Text>();
@@ -25,7 +24,7 @@ public class HealthDisplay : MonoBehaviour {
         healthUI.text = "Health : " + playerHealth.ToString();
         if(playerHealth <= 0)
         {
-            player.transform.position = respawnPoint;
+            player.transform.position = respawnPoint.transform.position;
             playerHealth = startingHealth;
         }
 	}

@@ -50,7 +50,7 @@ public class PowerUpUse : MonoBehaviour
     {
         float starterSpeed;
         starterSpeed = playerMovement.movespeed;
-        playerMovement.movespeed = 10;
+        playerMovement.movespeed = 2;
         yield return new WaitForSeconds(15f);
         playerMovement.movespeed = starterSpeed;
     }

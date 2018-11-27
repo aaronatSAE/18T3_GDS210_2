@@ -18,7 +18,6 @@ public class PowerUpAmount : MonoBehaviour {
         //alternates between the 2 power ups when the player presses tab
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            print("run");
             if(previousPowerUp != 2 && activePowerUp == 1)
             {
                 activePowerUp += 1;

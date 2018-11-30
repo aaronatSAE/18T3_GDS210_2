@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class WeaponControl : MonoBehaviour {
     public float Weapon;
-    public Text WeaponText;
-    
+    public Image WeaponImage;
+    public Sprite waterGun;
+    public Sprite yoYo;
+
     //sets default weapon information to water gun
     private void Start()
     {
         Weapon = 1;
-        WeaponText = GetComponent<Text>();
-        WeaponText.text = "Water Gun";
+        WeaponImage = GetComponent<Image>();      
     }
 
     // retrieves player input and changes the active weapon the player is using
@@ -20,12 +21,12 @@ public class WeaponControl : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Weapon = 1;
-            WeaponText.text = "Water Gun";
+            WeaponImage.sprite  = waterGun;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Weapon = 2;
-            WeaponText.text = "Yo-Yo";
+            WeaponImage.sprite = yoYo;
         }
 	}
 }

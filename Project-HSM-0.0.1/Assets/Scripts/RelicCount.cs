@@ -8,23 +8,23 @@ public class RelicCount : MonoBehaviour {
     public float relicLeft;
     GameObject portal;
     GameObject player;
-    Text relicLeftCount;
+    public Image relicLeftImage;
 
 	// Use this for initialization
 	void Start () {
         relicLeft = 3;
         portal = Resources.Load<GameObject>("EndGame/PortalOut");
         player = GameObject.Find("Player");
-        relicLeftCount = GetComponent<Text>();
+        relicLeftImage = GetComponent<Image>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-        relicLeftCount.text = "Relic Left : " + relicLeft.ToString();
+        //relicLeftCount.text = "Relic Left : " + relicLeft.ToString();
+       
 		if(relicLeft <= 0)
         {
-            relicLeftCount.enabled = false;
+            relicLeftImage.enabled = false;
             Instantiate(portal, player.transform.position, player.transform.rotation);
             relicLeft = 1000;
         }

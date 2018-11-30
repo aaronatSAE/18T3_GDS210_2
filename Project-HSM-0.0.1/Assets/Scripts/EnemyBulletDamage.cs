@@ -18,6 +18,7 @@ public class EnemyBulletDamage : MonoBehaviour
         if (collision.collider.tag == "Player")
         {
             healthDisplay.playerHealth -= bulletDamage;
+            healthDisplay.healthUIImage.fillAmount -= 0.1f;
         }
     }
 }

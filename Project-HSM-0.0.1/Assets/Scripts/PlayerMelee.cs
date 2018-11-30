@@ -27,7 +27,7 @@ public class PlayerMelee : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) && playerAmmo.meleeAmmoCount > 0 && weaponControl.Weapon == 2)
         {
             //removes ammo
-            playerAmmo.meleeAmmoCount = playerAmmo.meleeAmmoCount - Time.deltaTime;
+          //  playerAmmo.meleeAmmoCount = playerAmmo.meleeAmmoCount - Time.deltaTime;
             //checks if there is a existing Yo-Yo
             if (meleeSpawn == false)
             {

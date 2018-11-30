@@ -26,7 +26,7 @@ public class MeleeEnemyAttack : MonoBehaviour
             if(attackDelay < 0)
             {
                 //once timer is over the player takes damage
-                healthDisplay.playerHealth -= attackDamage;
+                healthDisplay.healthUIImage.fillAmount -= 0.3f;
                 attackDelay = 2f;
             }
         }

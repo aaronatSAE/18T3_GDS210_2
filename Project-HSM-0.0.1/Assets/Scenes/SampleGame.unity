@@ -4826,6 +4826,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: b9de18849f39ffc4995dc81c48c558ad,
         type: 3}
+    - target: {fileID: 114580976059178906, guid: 8de1dc63fd43d1d45883905d84e70fab,
+        type: 2}
+      propertyPath: activePowerUp
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114854866311261966, guid: 8de1dc63fd43d1d45883905d84e70fab, type: 2}
     - {fileID: 114016215337381700, guid: 8de1dc63fd43d1d45883905d84e70fab, type: 2}

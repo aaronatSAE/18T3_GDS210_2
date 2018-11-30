@@ -8,11 +8,15 @@ public class PowerUpAmount : MonoBehaviour {
     public float healthUp;
     public float activePowerUp = 1;
     [SerializeField] private float previousPowerUp;
+    public Sprite speedBoost;
+    public Sprite healthBoost;
+    public Image powerUpImage;
 
-	// makes the values of previousPowerUp equal to activePowerUp
-	void Start () {
+    // makes the values of previousPowerUp equal to activePowerUp
+    void Start () {
         previousPowerUp = activePowerUp;
-	}
+        powerUpImage = GetComponent<Image>();
+    }
 	
 	void Update () {
         //alternates between the 2 power ups when the player presses tab
@@ -31,16 +35,22 @@ public class PowerUpAmount : MonoBehaviour {
         //updates the UI so that player can know what power is being used currently
 		if(activePowerUp == 1)
         {
+            /*
             Text speedText;
             speedText = gameObject.GetComponent<Text>();
             speedText.text = "Speed : " + speedUp.ToString();
+            */
+           powerUpImage.sprite = speedBoost;
         }
 
         if (activePowerUp == 2)
         {
+            /*
             Text healthText;
             healthText = gameObject.GetComponent<Text>();
             healthText.text = "Health : " + healthUp.ToString();
+            */
+            powerUpImage.sprite = healthBoost;
         }
         previousPowerUp = activePowerUp;
     }

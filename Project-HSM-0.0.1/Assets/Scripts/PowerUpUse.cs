@@ -23,6 +23,7 @@ public class PowerUpUse : MonoBehaviour
         //checks what the active power up is
 		if(powerUpAmount.activePowerUp == 1)
         {
+            Debug.Log("powerup");
             //when the player presses the enter key and there is ammo for the correponding power up use it
             if (Input.GetKeyDown(KeyCode.Return) && powerUpAmount.speedUp >= 1)
             {

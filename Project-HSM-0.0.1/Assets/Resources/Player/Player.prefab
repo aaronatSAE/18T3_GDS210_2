@@ -1094,8 +1094,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4285309727721034}
   - component: {fileID: 95890450647500028}
+  - component: {fileID: 114524056839298352}
   m_Layer: 0
-  m_Name: Graphics
+  m_Name: PlayerGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2285,7 +2286,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1911342377528538}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 248264bb89ba5a347aaf542f7f66d011, type: 3}
   m_Controller: {fileID: 9100000, guid: e47ce54187eab4d4f9e84abf63aa34cc, type: 2}
   m_CullingMode: 1
@@ -2308,6 +2309,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1571869244959400, guid: 386e9272e380e05489e32fcca9bbd922, type: 2}
+--- !u!114 &114524056839298352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1911342377528538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff399abb8b8aaba4280156d617a5dd42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114764212709199198
 MonoBehaviour:
   m_ObjectHideFlags: 1

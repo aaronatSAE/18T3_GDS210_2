@@ -10,6 +10,7 @@ TagManager:
   - MeleeEnemy
   - RangedEnemy
   - TrapperEnemy
+  - Dancing
   layers:
   - Default
   - TransparentFX

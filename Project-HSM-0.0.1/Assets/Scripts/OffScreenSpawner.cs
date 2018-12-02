@@ -6,7 +6,7 @@ public class OffScreenSpawner : MonoBehaviour {
     [SerializeField] private float timer = 10;
     [SerializeField] private Vector3 spawn;
     [SerializeField] private GameObject[] enemies;
-    private float scriptTimer;
+    private float scriptTimer = 5;
     GameObject player;
     [SerializeField] private Ray ray;
 

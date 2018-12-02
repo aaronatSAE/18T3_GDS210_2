@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: d2ab65af679a7934a82759b1781134c8
+guid: ff399abb8b8aaba4280156d617a5dd42
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - BrokenWall: {fileID: 100146, guid: 8e66c1808341f6f4ea8424cda76779e2, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

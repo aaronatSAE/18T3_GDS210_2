@@ -33,10 +33,10 @@ public class PlayerAmmo : MonoBehaviour
             //displays the ammo count for the Yo-Yo
             ammoText.text = meleeAmmoCount.ToString();
         }
-        if(weaponControl.Weapon != 2 && meleeAmmoCount < 10)
-        {
+       // if(weaponControl.Weapon != 2 && meleeAmmoCount < 10)
+      //  {
             //if the player is not using the Yo-Yo the ammo for the Yo-Yo recharges
-            meleeAmmoCount = meleeAmmoCount + (Time.deltaTime / 2);
-        }
+           // meleeAmmoCount = meleeAmmoCount + (Time.deltaTime / 2);
+       // }
     }
 }

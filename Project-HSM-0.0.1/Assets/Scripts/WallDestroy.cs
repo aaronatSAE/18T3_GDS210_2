@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class WallDestroy : MonoBehaviour {
     public GameObject BrokenWall;
+    public float wallHealth = 3f;
     // checks if a bullet collided with wall, if it did destroy the wall and create a broken wall
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Bullet")
         {
-            Instantiate(BrokenWall,transform.position, transform.rotation);
+            wallHealth -= 1f;
+        }
+        if (wallHealth >= 0f)
+        {
+            //Instantiate(BrokenWall, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

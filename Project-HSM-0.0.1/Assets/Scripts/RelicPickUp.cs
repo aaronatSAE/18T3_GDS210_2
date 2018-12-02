@@ -24,5 +24,6 @@ public class RelicPickUp : MonoBehaviour {
     private void OnDestroy()
     {
         relicCount.relicLeft -= 1;
+        relicCount.relicLeftImage.fillAmount -= 0.345f;
     }
 }

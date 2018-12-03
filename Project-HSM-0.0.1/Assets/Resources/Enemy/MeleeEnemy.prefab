@@ -623,7 +623,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4837019727291030}
-  - component: {fileID: 95243869604592588}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -899,6 +898,7 @@ GameObject:
   - component: {fileID: 114721021910994356}
   - component: {fileID: 114701328824799614}
   - component: {fileID: 136814652448394720}
+  - component: {fileID: 95007972070984234}
   m_Layer: 0
   m_Name: MeleeEnemy
   m_TagString: MeleeEnemy
@@ -1448,7 +1448,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1767535926952238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 1, z: 0}
+  m_LocalPosition: {x: 28.051682, y: 4.5717313e-17, z: -20.589247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4837019727291030}
@@ -2324,17 +2324,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316567901634716}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &95243869604592588
+--- !u!95 &95007972070984234
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1517295821912080}
+  m_GameObject: {fileID: 1767535926952238}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 294c4173a78084c43a005524625e5864, type: 3}
   m_Controller: {fileID: 9100000, guid: e39eaef96e072874d907fce17dbdcb3d, type: 2}
-  m_CullingMode: 1
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -2357,6 +2357,9 @@ MonoBehaviour:
   starterMelee: 0
   starterTrapper: 0
   starterRanged: 0
+  ifDead: 0
+  scripts: []
+  cap: {fileID: 0}
 --- !u!114 &114709385476048946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2382,6 +2385,7 @@ MonoBehaviour:
   attackDelay: 0
   attackRange: 2.5
   attackDamage: 1
+  animationDelay: 0.9
 --- !u!135 &135022853554788724
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -8,11 +8,13 @@ public class RangedEnemyAttack : MonoBehaviour {
     GameObject player;
     NavMeshAgent nav;
     GameObject enemyBullet;
+    Animator anim;
     [SerializeField] private float attackDistance = 5f;
     GameObject bulletSpawn;
     public bool shooting;
     
     void Start () {
+        anim = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         nav = GetComponent<NavMeshAgent>();
         enemyBullet = Resources.Load<GameObject>("Enemy/EnemyBullet");
@@ -43,6 +45,7 @@ public class RangedEnemyAttack : MonoBehaviour {
     {
         shooting = true;
         nav.isStopped = true;
+        anim.SetTrigger("IsThrowing");
         yield return new WaitForSeconds(1);
         Instantiate(enemyBullet, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
         nav.isStopped = false;

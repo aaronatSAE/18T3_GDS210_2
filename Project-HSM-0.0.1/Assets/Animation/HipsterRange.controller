@@ -8,8 +8,8 @@ AnimatorController:
   m_Name: HipsterRange
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: IsThrowing
-    m_Type: 4
+  - m_Name: IsThrowing 0
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -35,7 +35,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsThrowing
+    m_ConditionEvent: IsThrowing 0
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102588711505585936}
@@ -58,8 +58,8 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: IsThrowing
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsThrowing 0
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102721564343881742}

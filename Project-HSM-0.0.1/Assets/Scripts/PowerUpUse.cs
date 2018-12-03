@@ -23,7 +23,6 @@ public class PowerUpUse : MonoBehaviour
         //checks what the active power up is
 		if(powerUpAmount.activePowerUp == 1)
         {
-            Debug.Log("powerup");
             //when the player presses the enter key and there is ammo for the correponding power up use it
             if (Input.GetKeyDown(KeyCode.Return) && powerUpAmount.speedUp >= 1)
             {
@@ -38,7 +37,7 @@ public class PowerUpUse : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return) && powerUpAmount.healthUp >= 1)
             {
                 //sets the player's health to full and then remove 1 ammo of the power up
-                healthDisplay.playerHealth = 10;
+                healthDisplay.healthUIImage.fillAmount = 1f;
                 powerUpAmount.healthUp -= 1;
             }
         }

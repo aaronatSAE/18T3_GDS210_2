@@ -24,7 +24,10 @@ public class PlayerMovement : MonoBehaviour
         {
             //rotate the player according to how the player is moving
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-            transform.rotation = Quaternion.LookRotation(moveDirection);
+            if (moveDirection != Vector3.zero)
+            {
+                transform.rotation = Quaternion.LookRotation(moveDirection);
+            }
             moveDirection = moveDirection * speed;
             //move the player
             if(movement == true)

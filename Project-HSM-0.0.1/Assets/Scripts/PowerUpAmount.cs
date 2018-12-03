@@ -11,12 +11,13 @@ public class PowerUpAmount : MonoBehaviour {
     public Sprite speedBoost;
     public Sprite healthBoost;
     public Image powerUpImage;
-    private Color gray;
+    private Color grayScale;
 
     // makes the values of previousPowerUp equal to activePowerUp
     void Start () {
         previousPowerUp = activePowerUp;
         powerUpImage = GetComponent<Image>();
+        grayScale = new Color(70, 70, 70, 255);
     }
 	
 	void Update () {
@@ -39,12 +40,25 @@ public class PowerUpAmount : MonoBehaviour {
            powerUpImage.sprite = speedBoost;
             if(speedUp <= 0)
             {
+                powerUpImage.color = new Color32(70, 70, 70, 255);
+            }
+            else
+            {
+                powerUpImage.color = new Color32(255, 255, 255, 255);
             }
         }
 
         if (activePowerUp == 2)
         {
             powerUpImage.sprite = healthBoost;
+            if (healthUp <= 0)
+            {
+                powerUpImage.color = new Color32(70, 70, 70, 255);
+            }
+            else
+            {
+                powerUpImage.color = new Color32(255, 255, 255, 255);
+            }
         }
         previousPowerUp = activePowerUp;
     }

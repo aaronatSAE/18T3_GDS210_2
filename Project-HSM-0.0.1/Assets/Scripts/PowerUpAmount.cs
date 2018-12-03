@@ -11,6 +11,7 @@ public class PowerUpAmount : MonoBehaviour {
     public Sprite speedBoost;
     public Sprite healthBoost;
     public Image powerUpImage;
+    private Color gray;
 
     // makes the values of previousPowerUp equal to activePowerUp
     void Start () {
@@ -35,21 +36,14 @@ public class PowerUpAmount : MonoBehaviour {
         //updates the UI so that player can know what power is being used currently
 		if(activePowerUp == 1)
         {
-            /*
-            Text speedText;
-            speedText = gameObject.GetComponent<Text>();
-            speedText.text = "Speed : " + speedUp.ToString();
-            */
            powerUpImage.sprite = speedBoost;
+            if(speedUp <= 0)
+            {
+            }
         }
 
         if (activePowerUp == 2)
         {
-            /*
-            Text healthText;
-            healthText = gameObject.GetComponent<Text>();
-            healthText.text = "Health : " + healthUp.ToString();
-            */
             powerUpImage.sprite = healthBoost;
         }
         previousPowerUp = activePowerUp;

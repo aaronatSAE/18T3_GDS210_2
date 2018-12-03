@@ -15,19 +15,19 @@ public class PlayerAnimation : MonoBehaviour {
 
     void Update()
     {
-        if(Input.GetKey("w"))
+        if(Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
         {
             animator.SetBool("IsMoving", true);
         }
-        else if (Input.GetKey("a"))
+        else if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
         {
             animator.SetBool("IsMoving", true);
         }
-        else if (Input.GetKey("s"))
+        else if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow))
         {
             animator.SetBool("IsMoving", true);
         }
-        else if (Input.GetKey("d"))
+        else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
         {
             animator.SetBool("IsMoving", true);
         }

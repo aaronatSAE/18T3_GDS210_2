@@ -10,15 +10,17 @@ public class TrapEnemy : MonoBehaviour
     NavMeshAgent nav;
     PlayerMovement playerMovement;
     Rigidbody rigidPlayer;
+    Animator animator;
     public float trapLength;
     public float trapTimer;
     public float respawnLength;
     public float respawnTimer;
     public bool disabled;
 
-    // Use this for initialization
+    // Find component required for the script and sets some default values
     void Start()
     {
+        animator = GameObject.Find("PlayerGraphics").GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         capsuleCollider = GetComponent<CapsuleCollider>();
         playerMovement = player.GetComponent<PlayerMovement>();
@@ -41,19 +43,25 @@ public class TrapEnemy : MonoBehaviour
                 capsuleCollider.enabled = false;
                 nav.isStopped = true;
                 disabled = true;
+                animator.SetBool("IsDancing", true);
             }
             if (trapTimer <= 0 && disabled == true)
             {
                 playerMovement.movement = true;
+                animator.SetBool("IsDancing", false);
             }
         }
 
         if (Vector3.Distance(player.transform.position, transform.position) >= 2.5f)
         {
+            if (respawnTimer <= 0)
+            {
+                capsuleCollider.enabled = true;
+                nav.isStopped = false;
+            }
             playerMovement.movement = true;
-            capsuleCollider.enabled = true;
-            nav.isStopped = false;
             disabled = false;
+            animator.SetBool("IsDancing", false);
         }
 
         respawnTimer -= Time.deltaTime;
@@ -66,6 +74,7 @@ public class TrapEnemy : MonoBehaviour
             respawnTimer = respawnLength;
             trapTimer = trapLength;
             disabled = false;
+            animator.SetBool("IsDancing", false);
         }
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a3e8c8df1fc06149add0bca8cc508fe
+guid: e818acce84e86404992569713e662f08
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -68,7 +68,17 @@ ModelImporter:
     100124: mixamorig:Spine
     100126: mixamorig:Spine1
     100128: mixamorig:Spine2
-    100130: //RootNode
+    100130: polySurface1.001
+    100132: //RootNode
+    100134: transform1
+    100136: transform2
+    100138: transform3
+    100140: transform4
+    100142: transform5
+    100144: transform6
+    100146: transform7
+    100148: transform8
+    100150: transform9
     400000: mixamorig:Head
     400002: mixamorig:HeadTop_End
     400004: mixamorig:Hips
@@ -134,9 +144,37 @@ ModelImporter:
     400124: mixamorig:Spine
     400126: mixamorig:Spine1
     400128: mixamorig:Spine2
-    400130: //RootNode
+    400130: polySurface1.001
+    400132: //RootNode
+    400134: transform1
+    400136: transform2
+    400138: transform3
+    400140: transform4
+    400142: transform5
+    400144: transform6
+    400146: transform7
+    400148: transform8
+    400150: transform9
+    2100000: Glasses 1
+    2100002: Skin
+    2100004: 3D2
+    2100006: Glasses 2
+    2100008: 3D1
+    2100010: Shirt 2
+    2100012: Jeans 3
+    2100014: Jeans 1
+    2100016: Shirt 3
+    2100018: Shirt 1
+    2100020: Jeans 2
+    2100022: Shoe  2
+    2100024: Shoe 1
+    2100026: Hair 1
+    2100028: Hair 3
+    2100030: Hair 2
+    4300000: polySurface1.001
     7400000: Melee
     9500000: //RootNode
+    13700000: polySurface1.001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -176,7 +214,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

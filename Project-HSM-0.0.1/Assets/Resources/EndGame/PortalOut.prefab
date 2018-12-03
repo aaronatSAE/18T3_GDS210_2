@@ -122,8 +122,8 @@ GameObject:
   - component: {fileID: 4272335529376752}
   - component: {fileID: 33372093453946698}
   - component: {fileID: 23540275182069940}
-  - component: {fileID: 64772297904719742}
   - component: {fileID: 114508767548986578}
+  - component: {fileID: 65351391030460884}
   m_Layer: 0
   m_Name: PortalOut
   m_TagString: Untagged
@@ -236,7 +236,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1603756139199364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.078356, y: 5.4761257e-16, z: -0.31142256}
+  m_LocalPosition: {x: 16.225876, y: 5.804985e-16, z: -15.121918}
   m_LocalScale: {x: 0.24856125, y: 4.939981, z: 0.13753752}
   m_Children:
   - {fileID: 4467936177523802}
@@ -276,7 +276,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1513879868282876}
   m_LocalRotation: {x: -0, y: -0.9998594, z: -0, w: 0.016769635}
-  m_LocalPosition: {x: -0.08046491, y: 0.081, z: 12.3}
+  m_LocalPosition: {x: 0.1, y: 0, z: 5.3}
   m_LocalScale: {x: 402.68057, y: 20.242994, z: 726.7091}
   m_Children:
   - {fileID: 4770153679359224}
@@ -846,8 +846,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1562264538516360}
   m_Mesh: {fileID: 4300014, guid: 8e4b567a3f85f9947a079680eec0e364, type: 3}
---- !u!64 &64772297904719742
-MeshCollider:
+--- !u!65 &65351391030460884
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -855,11 +855,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 13.8423, y: 1.0894184, z: 11.927148}
+  m_Center: {x: 0.31508195, y: 0.52560437, z: 20}
 --- !u!95 &95885849939277098
 Animator:
   serializedVersion: 3

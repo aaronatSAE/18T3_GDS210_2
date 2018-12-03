@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 114080265192539542}
   - component: {fileID: 136362609704724682}
   m_Layer: 0
-  m_Name: TrapperEnemy 1
+  m_Name: TrapperEnemy
   m_TagString: TrapperEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

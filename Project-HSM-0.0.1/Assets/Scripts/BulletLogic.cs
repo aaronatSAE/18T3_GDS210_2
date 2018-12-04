@@ -13,11 +13,11 @@ public class BulletLogic : MonoBehaviour {
 	
 	// constantly moving the bullet forward
 	void Update () {
-        rb.AddForce(transform.forward * bulletspeed);
+        rb.AddForce(transform.forward * bulletspeed * -1);
 	}
     //destory bullet on collision
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }

@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 4080411170295250}
   - component: {fileID: 114764212709199198}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: MeleeSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1251,7 +1251,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1879761150509216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.101499975, z: 1.2290006}
+  m_LocalPosition: {x: 0, y: 0.101499975, z: 1.84}
   m_LocalScale: {x: 1.0004674, y: 0.5, z: 1.0004673}
   m_Children: []
   m_Father: {fileID: 4221208594166704}
@@ -2308,7 +2308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5057351a3a0b8d64f9d1fb230477ed24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1571869244959400, guid: 386e9272e380e05489e32fcca9bbd922, type: 2}
+  bullet: {fileID: 1880112321711244, guid: 268921692b1b6b742b1d0c47de17d8ab, type: 2}
 --- !u!114 &114524056839298352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2331,7 +2331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d43602bb0877df43b2c20369dfe8291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YoYo: {fileID: 1772160712410596, guid: 9486b74ffa363e947921720426feaa64, type: 2}
+  YoYo: {fileID: 1185450719836648, guid: 649fa2b78bffc9a49836db0f5e275c14, type: 2}
   ActiveWeapon: {fileID: 0}
   AmmoCount: {fileID: 1772160712410596, guid: 9486b74ffa363e947921720426feaa64, type: 2}
 --- !u!114 &114967078859240432

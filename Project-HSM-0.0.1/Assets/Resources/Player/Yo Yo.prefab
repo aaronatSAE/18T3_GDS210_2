@@ -70,9 +70,10 @@ GameObject:
   - component: {fileID: 23000192687604202}
   - component: {fileID: 65622133429218900}
   - component: {fileID: 54344053305284892}
+  - component: {fileID: 114003370696691098}
   m_Layer: 0
   m_Name: pasted__pSphere1
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,9 +137,10 @@ GameObject:
   - component: {fileID: 23822137032833200}
   - component: {fileID: 65671896764047696}
   - component: {fileID: 54888252879782378}
+  - component: {fileID: 114532260847827548}
   m_Layer: 0
   m_Name: pSphere1
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +235,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1185450719836648}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.8348699, y: 0.49990723, z: -17.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4833689153754900}
@@ -508,7 +510,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!54 &54888252879782378
 Rigidbody:
@@ -523,7 +525,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!65 &65622133429218900
 BoxCollider:
@@ -549,3 +551,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020000005, y: 0.015782217, z: 0.020000005}
   m_Center: {x: 0.000000001397002, y: -0.0021088936, z: -0.0000000018607922}
+--- !u!114 &114003370696691098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211905785772500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce9ee5779a9f4741b15b42cbb123cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  yoyoPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &114532260847827548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1416980227342980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce9ee5779a9f4741b15b42cbb123cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  yoyoPosition: {x: 0, y: 0, z: 0}

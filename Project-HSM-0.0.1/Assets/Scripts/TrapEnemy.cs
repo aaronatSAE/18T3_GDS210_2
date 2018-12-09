@@ -11,9 +11,9 @@ public class TrapEnemy : MonoBehaviour
     PlayerMovement playerMovement;
     Rigidbody rigidPlayer;
     Animator animator;
-    [SerializeField] private float trapLength = 5f;
+    [SerializeField] private float trapLength;
     [SerializeField] private float trapTimer;
-    [SerializeField] private float respawnLength = 10f;
+    [SerializeField] private float respawnLength;
     [SerializeField] private float respawnTimer;
     [SerializeField] private bool disabled;
 
@@ -25,7 +25,9 @@ public class TrapEnemy : MonoBehaviour
         capsuleCollider = GetComponent<CapsuleCollider>();
         playerMovement = player.GetComponent<PlayerMovement>();
         nav = GetComponent<NavMeshAgent>();
+        trapLength = 5f;
         trapTimer = trapLength;
+        respawnLength = 10f;
         respawnTimer = respawnLength;
         disabled = false;
     }

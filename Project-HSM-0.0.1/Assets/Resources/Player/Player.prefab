@@ -213,6 +213,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1225678051916824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4383910718999140}
+  - component: {fileID: 114514879326438908}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1228445899371988
 GameObject:
   m_ObjectHideFlags: 1
@@ -1368,12 +1384,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1085292374767706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.02, y: 1.743, z: -13.19}
+  m_LocalPosition: {x: 10.02, y: 1.067, z: -13.19}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 4104051355908500}
   - {fileID: 4080411170295250}
   - {fileID: 4350685020423958}
+  - {fileID: 4383910718999140}
   - {fileID: 4285309727721034}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1437,7 +1454,7 @@ Transform:
   - {fileID: 4500396311646788}
   - {fileID: 4475308023487472}
   m_Father: {fileID: 4221208594166704}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4301651354142666
 Transform:
@@ -1520,6 +1537,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4707140565656462}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4383910718999140
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225678051916824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4221208594166704}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4391046144269004
 Transform:
@@ -2309,6 +2339,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1880112321711244, guid: 268921692b1b6b742b1d0c47de17d8ab, type: 2}
+--- !u!114 &114514879326438908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225678051916824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025ed8f8faa65ad448d5a82326e092c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 10
+  spawn: {x: 0, y: 0, z: 0}
+  enemies: []
+  scriptTimer: 5
 --- !u!114 &114524056839298352
 MonoBehaviour:
   m_ObjectHideFlags: 1

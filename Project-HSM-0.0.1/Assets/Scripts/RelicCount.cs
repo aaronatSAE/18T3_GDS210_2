@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class RelicCount : MonoBehaviour {
 
     public float relicLeft;
-    GameObject portal;
+   public GameObject portal;
     GameObject player;
     public Image relicLeftImage;
 
 	// Use this for initialization
 	void Start () {
         relicLeft = 3;
-        portal = Resources.Load<GameObject>("EndGame/PortalOut");
+      //  portal = Resources.Load<GameObject>("EndGame/PortalOut");
         player = GameObject.Find("Player");
         relicLeftImage = GetComponent<Image>();
 	}

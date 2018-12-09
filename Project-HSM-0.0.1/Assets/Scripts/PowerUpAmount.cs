@@ -37,6 +37,7 @@ public class PowerUpAmount : MonoBehaviour {
         //updates the UI so that player can know what power is being used currently
 		if(activePowerUp == 1)
         {
+            //sets the sprite and changes colour according to the amount of power ups avaliable
            powerUpImage.sprite = speedBoost;
             if(speedUp <= 0)
             {
@@ -50,6 +51,7 @@ public class PowerUpAmount : MonoBehaviour {
 
         if (activePowerUp == 2)
         {
+            //sets the sprite and changes colour according to the amount of power ups avaliable
             powerUpImage.sprite = healthBoost;
             if (healthUp <= 0)
             {

@@ -11,8 +11,9 @@ public class RangedEnemyAttack : MonoBehaviour {
     Animator anim;
     [SerializeField] private float attackDistance = 5f;
     GameObject bulletSpawn;
-    public bool shooting;
+    [SerializeField] private bool shooting;
     
+    // find components as well as setting values
     void Start () {
         anim = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
@@ -22,18 +23,20 @@ public class RangedEnemyAttack : MonoBehaviour {
         shooting = false;
 	}
 	
-	// Update is called once per frame
 	void Update () {
+        //checks if player is in attack range
 		if(Vector3.Distance(player.transform.position, transform.position) < attackDistance)
         {
+            //creates a ray from the enemy to player
             if(Physics.Raycast(transform.position, player.transform.position - transform.position, out hit, attackDistance, 1))
             {
-                Debug.DrawRay(transform.position, player.transform.position - transform.position * attackDistance, Color.black);
-
+                //if the ray hits the player
                 if (hit.collider.tag == "Player")
                 {
+                    //if the enemy hasn't recently shot
                     if(shooting == false)
                     {
+                        //start shoot coroutine
                         StartCoroutine("Shoot");
                     }
                 }

@@ -33,6 +33,7 @@ public class YoYoLogic : MonoBehaviour {
             other.gameObject.tag == "MeleeEnemy" ||
             other.gameObject.tag == "TrapperEnemy")
         {
+            //gets the death component on the enemy and subtracts 1 from the enemy
             DefaultEnemyDeath death;
             death = other.GetComponent<DefaultEnemyDeath>();
             death.enemyHealth -= 1;

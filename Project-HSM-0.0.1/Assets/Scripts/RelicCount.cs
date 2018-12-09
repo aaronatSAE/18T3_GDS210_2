@@ -10,7 +10,7 @@ public class RelicCount : MonoBehaviour {
     GameObject player;
     public Image relicLeftImage;
 
-	// Use this for initialization
+	// finds components and sets default values
 	void Start () {
         relicLeft = 3;
         portal = Resources.Load<GameObject>("EndGame/PortalOut");
@@ -18,12 +18,11 @@ public class RelicCount : MonoBehaviour {
         relicLeftImage = GetComponent<Image>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
-        //relicLeftCount.text = "Relic Left : " + relicLeft.ToString();
-       
+        //checks if player has collected 3 relics
 		if(relicLeft <= 0)
         {
+            //spawn a portal and sure that the game doesnt infintely spawn portals
             relicLeftImage.enabled = false;
             Instantiate(portal, player.transform.position, player.transform.rotation);
             relicLeft = 1000;

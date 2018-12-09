@@ -13,6 +13,7 @@ public class PlayerAnimation : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
+    //changes inputs from the player to animations
     void Update()
     {
         if(Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))

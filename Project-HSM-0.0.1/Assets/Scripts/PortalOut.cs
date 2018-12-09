@@ -10,7 +10,6 @@ public class PortalOut : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            print("run");
             SceneManager.LoadSceneAsync(scene, LoadSceneMode.Single);
         }
     }

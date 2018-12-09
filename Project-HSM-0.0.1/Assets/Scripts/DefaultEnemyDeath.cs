@@ -58,12 +58,16 @@ public class DefaultEnemyDeath : MonoBehaviour {
 
     IEnumerator Death()
     {
+        //disable capsule collider
         cap.enabled = false;
+        //finds every script on the gameobject and disables it
         foreach(MonoBehaviour script in scripts)
         {
             script.enabled = false;
         }
+        //starts death animation
         anim.SetTrigger("IsDead");
+        //wait and then destroy game object
         yield return new WaitForSeconds(6.0f);
         Destroy(gameObject);
     }

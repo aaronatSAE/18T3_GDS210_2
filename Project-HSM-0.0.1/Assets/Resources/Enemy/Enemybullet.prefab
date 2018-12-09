@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23160704220026240}
   - component: {fileID: 65079982110190392}
   - component: {fileID: 54732166399207784}
-  - component: {fileID: 114230785947036724}
+  - component: {fileID: 114784770331754372}
   - component: {fileID: 114029792623816282}
   m_Layer: 0
   m_Name: Enemybullet
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletDamage: 1
---- !u!114 &114230785947036724
+--- !u!114 &114784770331754372
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1967481233157032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31fc9faee6c65fd4f9588557dcec0ec1, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c6ff85dc3028664d8e8b7bdf3b89258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletspeed: 300

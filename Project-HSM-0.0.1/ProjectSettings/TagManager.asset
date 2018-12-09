@@ -11,6 +11,8 @@ TagManager:
   - RangedEnemy
   - TrapperEnemy
   - Dancing
+  - Wall
+  - Centre
   layers:
   - Default
   - TransparentFX

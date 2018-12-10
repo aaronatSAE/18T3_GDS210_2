@@ -41,6 +41,7 @@ public class TrapEnemy : MonoBehaviour
             if (disabled == false)
             {
                 //if not trap the player and make the player dance
+                trapTimer = trapLength;
                 playerMovement.movement = false;
                 capsuleCollider.enabled = false;
                 nav.isStopped = true;

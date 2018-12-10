@@ -8,9 +8,8 @@ public class MeleeEnemyAttack : MonoBehaviour
     private GameObject player;
     private HealthDisplay healthDisplay;
     private Animator anim;
-    [SerializeField] private float attackDelay = 2.5f;
+    [SerializeField] private float attackDelay = 0.6f;
     [SerializeField] private float attackRange = 1.4f;
-    [SerializeField] private float attackDamage = 1f;
     [SerializeField] private float animationDelay = 0.9f;
 
     // finds the player and the health display which is where the player health is stored
@@ -33,14 +32,14 @@ public class MeleeEnemyAttack : MonoBehaviour
             if(attackDelay < 0)
             {
                 //once timer is over the player takes damage
-                healthDisplay.healthUIImage.fillAmount -= 0.3f;
-                attackDelay = 1.4f;
+                healthDisplay.healthUIImage.fillAmount -= 0.1f;
+                attackDelay = 0.6f;
             }
         }
         //when the player leaves the attack range of the enemy then reset attack timer
         else
         {
-            attackDelay = 1.4f;
+            attackDelay = 0.6f;
         }
 	}
 }

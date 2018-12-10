@@ -13,6 +13,8 @@ TagManager:
   - Dancing
   - Wall
   - Centre
+  - Gun
+  - AudioPlayer
   layers:
   - Default
   - TransparentFX

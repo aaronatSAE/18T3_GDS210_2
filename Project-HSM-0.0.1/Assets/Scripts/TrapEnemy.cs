@@ -26,7 +26,7 @@ public class TrapEnemy : MonoBehaviour
         capsuleCollider = GetComponent<CapsuleCollider>();
         playerMovement = player.GetComponent<PlayerMovement>();
         nav = GetComponent<NavMeshAgent>();
-        trapMusic = GetComponent<AudioSource>();
+        trapMusic = GameObject.FindGameObjectWithTag("AudioPlayer").GetComponent<AudioSource>();
         trapLength = 5f;
         trapTimer = trapLength;
         respawnLength = 10f;

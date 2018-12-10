@@ -235,27 +235,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1603756139199364}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.225876, y: 5.804985e-16, z: -15.121918}
-  m_LocalScale: {x: 0.24856125, y: 4.939981, z: 0.13753752}
+  m_LocalRotation: {x: 0.075586036, y: -0, z: -0, w: 0.99713933}
+  m_LocalPosition: {x: 7.4652443, y: 0.20761895, z: -14.445965}
+  m_LocalScale: {x: 0.2, y: 3, z: 0.12}
   m_Children:
   - {fileID: 4467936177523802}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.67, y: 0, z: 0}
 --- !u!4 &4348481691425596
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1562264538516360}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.011676822, y: 0.04128019, z: 0.0015633133}
+  m_LocalRotation: {x: -0.12182255, y: -0, z: -6.984919e-10, w: 0.99255186}
+  m_LocalPosition: {x: 0.011662308, y: 0.04198825, z: 0.002162217}
   m_LocalScale: {x: 0.8756401, y: 0.8041309, z: 0.06463567}
   m_Children: []
   m_Father: {fileID: 4467936177523802}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -13.995001, y: 0, z: 0}
 --- !u!4 &4382481149493238
 Transform:
   m_ObjectHideFlags: 1
@@ -298,13 +298,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1622043022231764}
-  m_LocalRotation: {x: 0, y: 0, z: 0.706612, w: 0.70760125}
-  m_LocalPosition: {x: -0.00003069912, y: 0.045139153, z: 0}
+  m_LocalRotation: {x: -0.08620181, y: 0.08608105, z: 0.7013492, w: 0.70233095}
+  m_LocalPosition: {x: -0.000030698207, y: 0.04513915, z: -0.0000000054840426}
   m_LocalScale: {x: 1.2756124, y: 2.6406393, z: 0.40944794}
   m_Children: []
   m_Father: {fileID: 4467936177523802}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -13.995001, y: 0, z: 89.920006}
 --- !u!4 &4667366621165086
 Transform:
   m_ObjectHideFlags: 1

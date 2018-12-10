@@ -6,11 +6,13 @@ public class PlayerShoot : MonoBehaviour {
     [SerializeField] private GameObject bullet;
     private WeaponControl weaponControl;
     private PlayerAmmo playerAmmo;
+    AudioSource shootSound;
 
 	// Find gameobjects
 	void Start () {
         weaponControl = GameObject.Find("ActiveWeapon").GetComponent<WeaponControl>();
         playerAmmo = GameObject.Find("AmmoCount").GetComponent<PlayerAmmo>();
+        shootSound = GetComponent<AudioSource>();
 	}
 	
 	// Checks if the player meets the requirements to use the water gun
@@ -22,6 +24,7 @@ public class PlayerShoot : MonoBehaviour {
             //reduce ammo count and spawn a bullet
             if(weaponControl.Weapon == 1)
             {
+                shootSound.Play(0);
                 //playerAmmo.gunAmmoCount -= 1;
                 Instantiate(bullet, transform.position, transform.rotation);
             }

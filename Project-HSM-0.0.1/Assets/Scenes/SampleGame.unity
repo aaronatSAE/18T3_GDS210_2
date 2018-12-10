@@ -2051,7 +2051,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: 7ffdc8489e086204590b8a93027ac1b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2582,7 +2582,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: 7ffdc8489e086204590b8a93027ac1b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3190,7 +3190,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: 7ffdc8489e086204590b8a93027ac1b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3311,7 +3311,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: 7ffdc8489e086204590b8a93027ac1b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4972,7 +4972,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: 7ffdc8489e086204590b8a93027ac1b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6454,7 +6454,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: 7ffdc8489e086204590b8a93027ac1b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6575,7 +6575,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: 7ffdc8489e086204590b8a93027ac1b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9534,7 +9534,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: 7ffdc8489e086204590b8a93027ac1b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10685,7 +10685,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: 7ffdc8489e086204590b8a93027ac1b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12071,7 +12071,6 @@ GameObject:
   - component: {fileID: 1907248249}
   - component: {fileID: 1907248251}
   - component: {fileID: 1907248250}
-  - component: {fileID: 1907248254}
   - component: {fileID: 1907248253}
   - component: {fileID: 1907248252}
   m_Layer: 0
@@ -12111,7 +12110,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b61137cdab63f324eb2f65b39cbce977, type: 2}
+  - {fileID: 2100000, guid: b07f61d1e6ecc4d45821500743f7d068, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12168,19 +12167,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300038, guid: 5363b38a6ca659b45a3ed93dbbdaa457, type: 3}
---- !u!114 &1907248254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1907248248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ab65af679a7934a82759b1781134c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BrokenWall: {fileID: 100146, guid: 8e66c1808341f6f4ea8424cda76779e2, type: 3}
-  wallHealth: 3
 --- !u!1001 &1938210827
 Prefab:
   m_ObjectHideFlags: 0

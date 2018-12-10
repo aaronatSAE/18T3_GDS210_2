@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: f6d537205cfccc543a844e3efce8906f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 29ca91b017db6a541b6ac1df349e9a16, type: 2}
 --- !u!1 &1025284
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 6619041}
   - component: {fileID: 6619044}
   - component: {fileID: 6619043}
+  - component: {fileID: 6619045}
   m_Layer: 0
   m_Name: pCone55
   m_TagString: Untagged
@@ -277,6 +278,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543587, y: 0.059982337, z: 0.04448745}
   m_Center: {x: 0.000000014901161, y: -0.0000000018626451, z: -0.000000059604645}
+--- !u!208 &6619045
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 6619039}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &10924317
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +693,7 @@ GameObject:
   - component: {fileID: 51123228}
   - component: {fileID: 51123231}
   - component: {fileID: 51123230}
+  - component: {fileID: 51123232}
   m_Layer: 0
   m_Name: pCone56
   m_TagString: Untagged
@@ -767,6 +784,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543587, y: 0.059982337, z: 0.04448745}
   m_Center: {x: 0.000000029802322, y: -0.0000000018626451, z: -0.000000014901161}
+--- !u!208 &51123232
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 51123226}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &53006666
 Prefab:
   m_ObjectHideFlags: 0
@@ -1055,6 +1087,8 @@ GameObject:
   - component: {fileID: 81206922}
   - component: {fileID: 81206924}
   - component: {fileID: 81206923}
+  - component: {fileID: 81206925}
+  - component: {fileID: 81206926}
   m_Layer: 0
   m_Name: pCylinder12
   m_TagString: Untagged
@@ -1120,6 +1154,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 81206921}
   m_Mesh: {fileID: 4300048, guid: 9a8ad25a5fc1a2f46a853339abbdf259, type: 3}
+--- !u!208 &81206925
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81206921}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.010000001, y: 0.010000001, z: 0.010000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!136 &81206926
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81206921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.010000003
+  m_Height: 0.02
+  m_Direction: 1
+  m_Center: {x: 0.0000000013969839, y: 0, z: -0.0000000023283064}
+--- !u!1 &89880568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89880569}
+  m_Layer: 0
+  m_Name: TrafficCones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &89880569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 89880568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.237894, y: 0.75583506, z: -24.374027}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 494895197}
+  - {fileID: 1136067194}
+  - {fileID: 655714752}
+  - {fileID: 557370803}
+  - {fileID: 443441622}
+  - {fileID: 242312556}
+  - {fileID: 2116189340}
+  - {fileID: 1457967888}
+  - {fileID: 1606728175}
+  - {fileID: 1887677006}
+  - {fileID: 412039627}
+  - {fileID: 1011310971}
+  - {fileID: 656497815}
+  - {fileID: 2092800807}
+  - {fileID: 1045822745}
+  - {fileID: 1992953011}
+  - {fileID: 797232944}
+  - {fileID: 977604895}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &95875305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,19 +1355,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 24.41
+      value: 1.1721058
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.16
+      value: -0.5958351
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 22.48
+      value: 46.854027
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1279,11 +1387,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -1366,6 +1482,7 @@ GameObject:
   - component: {fileID: 136184722}
   - component: {fileID: 136184721}
   - component: {fileID: 136184723}
+  - component: {fileID: 136184724}
   m_Layer: 0
   m_Name: pCone58
   m_TagString: Untagged
@@ -1444,6 +1561,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.059982337, z: 0.044487458}
   m_Center: {x: -0.000000007450581, y: -0.0000000018626451, z: 0.000000011175871}
+--- !u!208 &136184724
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136184719}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &136687606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,7 +1953,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 56.091003, y: 84.478004, z: 0}
 --- !u!4 &170388520 stripped
 Transform:
@@ -2045,6 +2177,7 @@ GameObject:
   - component: {fileID: 186952653}
   - component: {fileID: 186952652}
   - component: {fileID: 186952654}
+  - component: {fileID: 186952655}
   m_Layer: 0
   m_Name: pCone45
   m_TagString: Untagged
@@ -2123,6 +2256,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.04448745}
   m_Center: {x: 0.000000014901161, y: -0.0000000018626451, z: 0}
+--- !u!208 &186952655
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 186952650}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &191026944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,19 +2583,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 27.13
+      value: 3.892105
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.17
+      value: -0.58583504
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 21.5
+      value: 45.874027
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2467,11 +2615,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -2507,6 +2663,11 @@ Transform:
   m_Father: {fileID: 624751583}
   m_RootOrder: 234
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &242312556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 685779959}
 --- !u!1 &245436811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2641,6 +2802,7 @@ GameObject:
   - component: {fileID: 279302633}
   - component: {fileID: 279302632}
   - component: {fileID: 279302634}
+  - component: {fileID: 279302635}
   m_Layer: 0
   m_Name: pCone65
   m_TagString: Untagged
@@ -2719,6 +2881,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0, y: -0.0000000018626451, z: 0}
+--- !u!208 &279302635
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279302630}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &281540599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,6 +3200,7 @@ GameObject:
   - component: {fileID: 304419916}
   - component: {fileID: 304419919}
   - component: {fileID: 304419918}
+  - component: {fileID: 304419920}
   m_Layer: 0
   m_Name: pCone73
   m_TagString: Untagged
@@ -3113,6 +3291,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.000000059604645, y: -0.0000000037252903, z: 0.0000000018626451}
+--- !u!208 &304419920
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 304419914}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &304717165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4059,7 +4252,7 @@ Transform:
   - {fileID: 1507242751}
   - {fileID: 20056110}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &411008417
 GameObject:
@@ -4091,6 +4284,11 @@ Transform:
   m_Father: {fileID: 319494180}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &412039627 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599906353}
 --- !u!1 &413205081
 GameObject:
   m_ObjectHideFlags: 0
@@ -4325,6 +4523,11 @@ Transform:
   m_Father: {fileID: 1878212880}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &443441622 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1475551151}
 --- !u!1 &444036765
 GameObject:
   m_ObjectHideFlags: 0
@@ -4401,7 +4604,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &444036769
 MonoBehaviour:
@@ -4885,6 +5088,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 491701201}
   m_Mesh: {fileID: 4300084, guid: 9a8ad25a5fc1a2f46a853339abbdf259, type: 3}
+--- !u!4 &494895197 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 820504483}
 --- !u!1 &502031015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5024,6 +5232,7 @@ GameObject:
   - component: {fileID: 520949718}
   - component: {fileID: 520949717}
   - component: {fileID: 520949719}
+  - component: {fileID: 520949720}
   m_Layer: 0
   m_Name: pCone42
   m_TagString: Untagged
@@ -5102,6 +5311,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0, y: -0.0000000018626451, z: 0}
+--- !u!208 &520949720
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 520949715}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &528015345
 GameObject:
   m_ObjectHideFlags: 0
@@ -5128,7 +5352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &533265597
 GameObject:
@@ -5236,7 +5460,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.1025671, z: 1.1025668}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -5597,6 +5821,11 @@ Transform:
   m_Father: {fileID: 1682506946}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &557370803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1972163541}
 --- !u!1 &560538350
 GameObject:
   m_ObjectHideFlags: 0
@@ -5610,6 +5839,7 @@ GameObject:
   - component: {fileID: 560538352}
   - component: {fileID: 560538355}
   - component: {fileID: 560538354}
+  - component: {fileID: 560538356}
   m_Layer: 0
   m_Name: pCone49
   m_TagString: Untagged
@@ -5700,6 +5930,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.000000029802322, y: -0.0000000018626451, z: 0.000000014901161}
+--- !u!208 &560538356
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 560538350}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &561503411
 GameObject:
   m_ObjectHideFlags: 0
@@ -5981,19 +6226,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 23.431
+      value: 0.1931057
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -24.59
+      value: -0.2159729
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6013,7 +6258,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -6307,6 +6560,7 @@ GameObject:
   - component: {fileID: 617299336}
   - component: {fileID: 617299339}
   - component: {fileID: 617299338}
+  - component: {fileID: 617299340}
   m_Layer: 0
   m_Name: pCone60
   m_TagString: Untagged
@@ -6397,6 +6651,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543587, y: 0.059982337, z: 0.04448745}
   m_Center: {x: 0.000000029802322, y: -0.0000000018626451, z: -0.000000014901161}
+--- !u!208 &617299340
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 617299334}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &623742298
 GameObject:
   m_ObjectHideFlags: 0
@@ -6739,7 +7008,7 @@ Transform:
   - {fileID: 1262954471}
   - {fileID: 1309180312}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625316653
 GameObject:
@@ -6865,19 +7134,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.75
+      value: 3.512106
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 14.29
+      value: 38.66403
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6897,11 +7166,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 24
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -7028,6 +7305,16 @@ Transform:
   m_Father: {fileID: 1859786622}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &655714752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1446029117}
+--- !u!4 &656497815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1047323223}
 --- !u!1 &658267646
 GameObject:
   m_ObjectHideFlags: 0
@@ -7306,19 +7593,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.01
+      value: 2.7721062
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: -0.55583507
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -29.3
+      value: -4.925972
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7338,11 +7625,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -7709,7 +8004,7 @@ Transform:
   - {fileID: 1591424338}
   - {fileID: 1958124892}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &720022114
 GameObject:
@@ -8800,6 +9095,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.009256221, y: 0.007894215, z: 0.008446931}
   m_Center: {x: 0.0008959149, y: 0, z: -0.0005874932}
+--- !u!4 &797232944 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1752291828}
 --- !u!1 &813219506
 GameObject:
   m_ObjectHideFlags: 0
@@ -8867,19 +9167,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 25.3
+      value: 2.0621052
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -25.79
+      value: -1.4159737
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8899,11 +9199,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -8952,6 +9260,7 @@ GameObject:
   - component: {fileID: 827952389}
   - component: {fileID: 827952392}
   - component: {fileID: 827952391}
+  - component: {fileID: 827952393}
   m_Layer: 0
   m_Name: pCone41
   m_TagString: Untagged
@@ -9042,6 +9351,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.000000029802322, y: -0.0000000018626451, z: 0}
+--- !u!208 &827952393
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827952387}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &827967379
 GameObject:
   m_ObjectHideFlags: 0
@@ -9103,7 +9427,7 @@ Transform:
   - {fileID: 18670738}
   - {fileID: 1630729396}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832627100
 GameObject:
@@ -9671,6 +9995,7 @@ GameObject:
   - component: {fileID: 889428512}
   - component: {fileID: 889428511}
   - component: {fileID: 889428513}
+  - component: {fileID: 889428514}
   m_Layer: 0
   m_Name: pCone71
   m_TagString: Untagged
@@ -9749,6 +10074,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.059982337, z: 0.044487458}
   m_Center: {x: 0, y: -0.0000000037252903, z: 0}
+--- !u!208 &889428514
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889428509}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &899683123
 GameObject:
   m_ObjectHideFlags: 0
@@ -9906,19 +10246,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 23.688
+      value: 0.45010567
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -20.401
+      value: 3.9730282
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9938,11 +10278,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -9959,6 +10307,7 @@ GameObject:
   - component: {fileID: 932003033}
   - component: {fileID: 932003032}
   - component: {fileID: 932003034}
+  - component: {fileID: 932003035}
   m_Layer: 0
   m_Name: pCone53
   m_TagString: Untagged
@@ -10037,6 +10386,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0}
+--- !u!208 &932003035
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 932003030}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &941406075
 GameObject:
   m_ObjectHideFlags: 0
@@ -10110,6 +10474,7 @@ GameObject:
   - component: {fileID: 948059013}
   - component: {fileID: 948059016}
   - component: {fileID: 948059015}
+  - component: {fileID: 948059017}
   m_Layer: 0
   m_Name: pCone72
   m_TagString: Untagged
@@ -10200,6 +10565,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.000000029802322, y: -0.0000000018626451, z: 0}
+--- !u!208 &948059017
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 948059011}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &953639634
 GameObject:
   m_ObjectHideFlags: 0
@@ -10522,6 +10902,11 @@ Transform:
   m_Father: {fileID: 624751583}
   m_RootOrder: 159
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &977604895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 593926161}
 --- !u!1 &995756839
 GameObject:
   m_ObjectHideFlags: 0
@@ -10645,6 +11030,11 @@ Transform:
   m_Father: {fileID: 55371824}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1011310971 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1912606448}
 --- !u!1 &1016266411
 GameObject:
   m_ObjectHideFlags: 0
@@ -10765,24 +11155,29 @@ Transform:
   m_Father: {fileID: 1174012594}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1045822745 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1466913730}
 --- !u!1001 &1047323223
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.74
+      value: 3.5021057
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 11.17
+      value: 35.54403
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10802,11 +11197,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 27
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -10960,6 +11363,7 @@ GameObject:
   - component: {fileID: 1067971834}
   - component: {fileID: 1067971833}
   - component: {fileID: 1067971835}
+  - component: {fileID: 1067971836}
   m_Layer: 0
   m_Name: pCone44
   m_TagString: Untagged
@@ -11038,6 +11442,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: -0.000000014901161, y: 0, z: -0.000000014901161}
+--- !u!208 &1067971836
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067971831}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1071486685
 GameObject:
   m_ObjectHideFlags: 0
@@ -11202,6 +11621,7 @@ GameObject:
   - component: {fileID: 1096391350}
   - component: {fileID: 1096391353}
   - component: {fileID: 1096391352}
+  - component: {fileID: 1096391354}
   m_Layer: 0
   m_Name: pCone75
   m_TagString: Untagged
@@ -11292,6 +11712,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.000000014901161, y: -0.0000000018626451, z: 0}
+--- !u!208 &1096391354
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1096391348}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1101827871
 GameObject:
   m_ObjectHideFlags: 0
@@ -11503,6 +11938,11 @@ Transform:
   m_Father: {fileID: 1209095603}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1136067194 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 2141622687}
 --- !u!1 &1136221631
 GameObject:
   m_ObjectHideFlags: 0
@@ -11546,6 +11986,7 @@ GameObject:
   - component: {fileID: 1143468696}
   - component: {fileID: 1143468699}
   - component: {fileID: 1143468698}
+  - component: {fileID: 1143468700}
   m_Layer: 0
   m_Name: pCone69
   m_TagString: Untagged
@@ -11636,6 +12077,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543587, y: 0.059982337, z: 0.044487458}
   m_Center: {x: -0.000000007450581, y: -0.0000000037252903, z: -0.000000029802322}
+--- !u!208 &1143468700
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1143468694}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1149649656
 GameObject:
   m_ObjectHideFlags: 0
@@ -11709,6 +12165,7 @@ GameObject:
   - component: {fileID: 1152007018}
   - component: {fileID: 1152007017}
   - component: {fileID: 1152007019}
+  - component: {fileID: 1152007020}
   m_Layer: 0
   m_Name: pCone67
   m_TagString: Untagged
@@ -11787,6 +12244,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543605, y: 0.05998234, z: 0.044487476}
   m_Center: {x: 0.000000013038516, y: -0.0000000037252903, z: 0}
+--- !u!208 &1152007020
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1152007015}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1153857108
 GameObject:
   m_ObjectHideFlags: 0
@@ -14685,6 +15157,7 @@ GameObject:
   - component: {fileID: 1356123469}
   - component: {fileID: 1356123468}
   - component: {fileID: 1356123470}
+  - component: {fileID: 1356123471}
   m_Layer: 0
   m_Name: pCone61
   m_TagString: Untagged
@@ -14763,6 +15236,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.05998234, z: 0.044487458}
   m_Center: {x: 0.000000007450581, y: -0.0000000037252903, z: 0.000000014901161}
+--- !u!208 &1356123471
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1356123466}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1358058199
 GameObject:
   m_ObjectHideFlags: 0
@@ -14864,12 +15352,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1361490048}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.34, y: 4.87, z: -24.72}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -39.36}
   m_LocalScale: {x: 1, y: 10.992, z: 20.048}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1405175889}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1374528056
 GameObject:
@@ -15088,6 +15576,36 @@ Transform:
   m_Father: {fileID: 624751583}
   m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1405175888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405175889}
+  m_Layer: 0
+  m_Name: InvisibleWalls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1405175889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1405175888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.34, y: 4.87, z: 14.640001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1361490051}
+  - {fileID: 1714297284}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1407950533
 GameObject:
   m_ObjectHideFlags: 0
@@ -15223,6 +15741,7 @@ GameObject:
   - component: {fileID: 1422017276}
   - component: {fileID: 1422017275}
   - component: {fileID: 1422017277}
+  - component: {fileID: 1422017278}
   m_Layer: 0
   m_Name: pCone52
   m_TagString: Untagged
@@ -15301,6 +15820,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543587, y: 0.059982337, z: 0.04448745}
   m_Center: {x: 0.000000014901161, y: -0.0000000018626451, z: 0}
+--- !u!208 &1422017278
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422017273}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1424766379
 GameObject:
   m_ObjectHideFlags: 0
@@ -15738,19 +16272,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 25.6
+      value: 2.3621063
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.15
+      value: -0.6058351
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -18.37
+      value: 6.0040264
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -15770,11 +16304,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -15810,6 +16352,11 @@ Transform:
   m_Father: {fileID: 624751583}
   m_RootOrder: 112
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1457967888 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 231076623}
 --- !u!1 &1459625600
 GameObject:
   m_ObjectHideFlags: 0
@@ -15845,19 +16392,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.04
+      value: 2.8021069
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.16
+      value: -0.5958351
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 19.93
+      value: 44.304028
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -15877,11 +16424,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 29
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -15921,19 +16476,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 24.87
+      value: 1.6321068
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -23.14
+      value: 1.2340279
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -15953,11 +16508,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -16073,19 +16636,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 24.43
+      value: 1.1921062
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 17.85
+      value: 42.22403
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -16105,11 +16668,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 28
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -17042,19 +17613,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.28
+      value: 3.0421066
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 16.5
+      value: 40.874027
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -17074,11 +17645,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -17241,6 +17820,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1605557855}
   m_Mesh: {fileID: 4300038, guid: 9a8ad25a5fc1a2f46a853339abbdf259, type: 3}
+--- !u!4 &1606728175 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 2134906265}
 --- !u!1 &1614904117
 GameObject:
   m_ObjectHideFlags: 0
@@ -17765,6 +18349,7 @@ GameObject:
   - component: {fileID: 1672649475}
   - component: {fileID: 1672649474}
   - component: {fileID: 1672649476}
+  - component: {fileID: 1672649477}
   m_Layer: 0
   m_Name: pCone46
   m_TagString: Untagged
@@ -17843,6 +18428,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.05998234, z: 0.044487458}
   m_Center: {x: 0.000000029802322, y: 0, z: 0.000000014901161}
+--- !u!208 &1672649477
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672649472}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1673700366
 GameObject:
   m_ObjectHideFlags: 0
@@ -18157,12 +18757,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1714297281}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.34, y: 4.87, z: 14.64}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 10.992, z: 20.048}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1405175889}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1718399220
 GameObject:
@@ -18176,6 +18776,7 @@ GameObject:
   - component: {fileID: 1718399223}
   - component: {fileID: 1718399222}
   - component: {fileID: 1718399224}
+  - component: {fileID: 1718399225}
   m_Layer: 0
   m_Name: pCone59
   m_TagString: Untagged
@@ -18254,6 +18855,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.05998234, z: 0.04448746}
   m_Center: {x: -0.000000014901161, y: -0.0000000037252903, z: 0.000000007450581}
+--- !u!208 &1718399225
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718399220}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1722792953
 GameObject:
   m_ObjectHideFlags: 0
@@ -18283,6 +18899,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2114139959}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1723082940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1723082941}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Centre
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1723082941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1723082940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.53, y: 10.525837, z: -3.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1726939095
 GameObject:
@@ -18384,6 +19028,7 @@ GameObject:
   - component: {fileID: 1744464307}
   - component: {fileID: 1744464306}
   - component: {fileID: 1744464308}
+  - component: {fileID: 1744464309}
   m_Layer: 0
   m_Name: pCone48
   m_TagString: Untagged
@@ -18462,6 +19107,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.05998234, z: 0.044487458}
   m_Center: {x: 0.000000014901161, y: 0, z: 0}
+--- !u!208 &1744464309
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1744464304}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1745941322
 GameObject:
   m_ObjectHideFlags: 0
@@ -18475,6 +19135,7 @@ GameObject:
   - component: {fileID: 1745941324}
   - component: {fileID: 1745941327}
   - component: {fileID: 1745941326}
+  - component: {fileID: 1745941328}
   m_Layer: 0
   m_Name: pCone43
   m_TagString: Untagged
@@ -18565,6 +19226,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.000000029802322, y: -0.0000000018626451, z: 0}
+--- !u!208 &1745941328
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745941322}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1749998536
 GameObject:
   m_ObjectHideFlags: 0
@@ -18631,19 +19307,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.6
+      value: 3.3621063
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.16
+      value: -0.5958351
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 8.88
+      value: 33.25403
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -18663,11 +19339,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 31
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -18757,7 +19441,7 @@ Transform:
   m_LocalScale: {x: 13.249001, y: 1, z: 18.475}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1771461119
 GameObject:
@@ -19030,7 +19714,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1794911264
 GameObject:
@@ -19180,7 +19864,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4221208594166704, guid: 41fa29758a4d52a4fb489ce50e42546d, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458697583660594, guid: 41fa29758a4d52a4fb489ce50e42546d, type: 2}
+      propertyPath: m_TagString
+      value: Gun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41fa29758a4d52a4fb489ce50e42546d, type: 2}
@@ -19227,6 +19915,7 @@ GameObject:
   - component: {fileID: 1810705746}
   - component: {fileID: 1810705745}
   - component: {fileID: 1810705747}
+  - component: {fileID: 1810705748}
   m_Layer: 0
   m_Name: pCone66
   m_TagString: Untagged
@@ -19305,6 +19994,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.059982337, z: 0.044487458}
   m_Center: {x: 0, y: -0.0000000018626451, z: 0.0000000037252903}
+--- !u!208 &1810705748
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1810705743}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1817232441
 GameObject:
   m_ObjectHideFlags: 0
@@ -19484,6 +20188,7 @@ GameObject:
   - component: {fileID: 1824904202}
   - component: {fileID: 1824904201}
   - component: {fileID: 1824904203}
+  - component: {fileID: 1824904204}
   m_Layer: 0
   m_Name: pCone63
   m_TagString: Untagged
@@ -19562,6 +20267,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.05998234, z: 0.04448746}
   m_Center: {x: -0.000000007450581, y: -0.0000000037252903, z: 0.000000014901161}
+--- !u!208 &1824904204
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824904199}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1828325832
 GameObject:
   m_ObjectHideFlags: 0
@@ -19667,6 +20387,7 @@ GameObject:
   - component: {fileID: 1842386868}
   - component: {fileID: 1842386871}
   - component: {fileID: 1842386870}
+  - component: {fileID: 1842386872}
   m_Layer: 0
   m_Name: pCone68
   m_TagString: Untagged
@@ -19757,6 +20478,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.000000029802322, y: -0.0000000037252903, z: 0}
+--- !u!208 &1842386872
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1842386866}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1842827350
 GameObject:
   m_ObjectHideFlags: 0
@@ -19937,6 +20673,7 @@ GameObject:
   - component: {fileID: 1849695112}
   - component: {fileID: 1849695111}
   - component: {fileID: 1849695113}
+  - component: {fileID: 1849695114}
   m_Layer: 0
   m_Name: pCone62
   m_TagString: Untagged
@@ -20015,6 +20752,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.059982337, z: 0.044487458}
   m_Center: {x: 0.0000000037252903, y: -0.0000000018626451, z: -0.0000000037252903}
+--- !u!208 &1849695114
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849695109}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1850408623
 GameObject:
   m_ObjectHideFlags: 0
@@ -20465,6 +21217,11 @@ Transform:
   m_Father: {fileID: 2115848871}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1887677006 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 644293976}
 --- !u!1 &1891273209
 GameObject:
   m_ObjectHideFlags: 0
@@ -20590,19 +21347,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 25.9
+      value: 2.6621056
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 12.94
+      value: 37.314026
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -20622,11 +21379,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 26
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -20673,6 +21438,7 @@ GameObject:
   - component: {fileID: 1937627132}
   - component: {fileID: 1937627131}
   - component: {fileID: 1937627133}
+  - component: {fileID: 1937627134}
   m_Layer: 0
   m_Name: pCone51
   m_TagString: Untagged
@@ -20751,6 +21517,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543598, y: 0.05998234, z: 0.044487454}
   m_Center: {x: -0.000000014901161, y: 0, z: 0.000000029802322}
+--- !u!208 &1937627134
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937627129}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1937741801
 GameObject:
   m_ObjectHideFlags: 0
@@ -21067,19 +21848,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 23.83
+      value: 0.59210587
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.19
+      value: -0.56583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -30.36
+      value: -5.9859734
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -21099,11 +21880,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -21199,6 +21988,11 @@ Transform:
   m_Father: {fileID: 624751583}
   m_RootOrder: 131
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1992953011 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 112804641}
 --- !u!1 &1993514931
 GameObject:
   m_ObjectHideFlags: 0
@@ -21335,6 +22129,7 @@ GameObject:
   - component: {fileID: 2023655021}
   - component: {fileID: 2023655020}
   - component: {fileID: 2023655019}
+  - component: {fileID: 2023655022}
   m_Layer: 0
   m_Name: pCone54
   m_TagString: Untagged
@@ -21437,6 +22232,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543587, y: 0.059982337, z: 0.04448745}
   m_Center: {x: 0.000000014901161, y: -0.0000000018626451, z: -0.000000029802322}
+--- !u!208 &2023655022
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2023655015}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2025031111
 GameObject:
   m_ObjectHideFlags: 0
@@ -21539,6 +22349,7 @@ GameObject:
   - component: {fileID: 2032249162}
   - component: {fileID: 2032249161}
   - component: {fileID: 2032249163}
+  - component: {fileID: 2032249164}
   m_Layer: 0
   m_Name: pCone64
   m_TagString: Untagged
@@ -21617,6 +22428,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543598, y: 0.05998234, z: 0.04448746}
   m_Center: {x: 0, y: -0.0000000037252903, z: -0.000000014901161}
+--- !u!208 &2032249164
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2032249159}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2035699846
 GameObject:
   m_ObjectHideFlags: 0
@@ -21630,6 +22456,7 @@ GameObject:
   - component: {fileID: 2035699848}
   - component: {fileID: 2035699851}
   - component: {fileID: 2035699850}
+  - component: {fileID: 2035699852}
   m_Layer: 0
   m_Name: pCone74
   m_TagString: Untagged
@@ -21720,6 +22547,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.000000029802322, y: -0.0000000018626451, z: -0.000000007450581}
+--- !u!208 &2035699852
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2035699846}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2042990604
 GameObject:
   m_ObjectHideFlags: 0
@@ -21853,6 +22695,7 @@ GameObject:
   - component: {fileID: 2057676972}
   - component: {fileID: 2057676971}
   - component: {fileID: 2057676973}
+  - component: {fileID: 2057676974}
   m_Layer: 0
   m_Name: pCone47
   m_TagString: Untagged
@@ -21931,6 +22774,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0}
+--- !u!208 &2057676974
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057676969}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2057847897
 GameObject:
   m_ObjectHideFlags: 0
@@ -22084,6 +22942,11 @@ Transform:
   m_Father: {fileID: 624751583}
   m_RootOrder: 224
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2092800807 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1488203468}
 --- !u!1 &2093459358
 GameObject:
   m_ObjectHideFlags: 0
@@ -22335,6 +23198,7 @@ GameObject:
   - component: {fileID: 2115649117}
   - component: {fileID: 2115649120}
   - component: {fileID: 2115649119}
+  - component: {fileID: 2115649121}
   m_Layer: 0
   m_Name: pCone70
   m_TagString: Untagged
@@ -22425,6 +23289,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543587, y: 0.059982337, z: 0.04448745}
   m_Center: {x: 0.000000007450581, y: -0.0000000018626451, z: -0.000000029802322}
+--- !u!208 &2115649121
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115649115}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2115848870
 GameObject:
   m_ObjectHideFlags: 0
@@ -22456,6 +23335,11 @@ Transform:
   m_Father: {fileID: 624751583}
   m_RootOrder: 156
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2116189340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 926061996}
 --- !u!1 &2119573851
 GameObject:
   m_ObjectHideFlags: 0
@@ -22469,6 +23353,7 @@ GameObject:
   - component: {fileID: 2119573853}
   - component: {fileID: 2119573856}
   - component: {fileID: 2119573855}
+  - component: {fileID: 2119573857}
   m_Layer: 0
   m_Name: pCone57
   m_TagString: Untagged
@@ -22559,6 +23444,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044543594, y: 0.059982337, z: 0.044487458}
   m_Center: {x: 0.000000029802322, y: -0.0000000018626451, z: 0.000000029802322}
+--- !u!208 &2119573857
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119573851}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2131608639
 GameObject:
   m_ObjectHideFlags: 0
@@ -22626,19 +23526,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 24.31
+      value: 1.0721054
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -26.64
+      value: -2.2659721
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -22658,11 +23558,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -22672,19 +23580,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 89880569}
     m_Modifications:
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 25.94
+      value: 2.7021065
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.7439417e-17
+      value: -0.75583506
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -20.93
+      value: 3.444027
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -22704,11 +23612,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1224085327361160, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
       propertyPath: m_Name
       value: Traffic_Cone (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 100.000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579315692596732, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 100.000046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8f29f83072a13469d0a7f37c4b6dd0, type: 2}
@@ -22725,6 +23641,7 @@ GameObject:
   - component: {fileID: 2145176146}
   - component: {fileID: 2145176145}
   - component: {fileID: 2145176147}
+  - component: {fileID: 2145176148}
   m_Layer: 0
   m_Name: pCone50
   m_TagString: Untagged
@@ -22803,6 +23720,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04454359, y: 0.059982337, z: 0.044487454}
   m_Center: {x: 0.000000007450581, y: -0.0000000018626451, z: 0}
+--- !u!208 &2145176148
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145176143}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.022000002, y: 0.030000001, z: 0.022000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2145541209
 GameObject:
   m_ObjectHideFlags: 0

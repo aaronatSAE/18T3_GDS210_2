@@ -10,10 +10,12 @@ public class PowerUpUse : MonoBehaviour
     PlayerMovement playerMovement;
     PowerUpAmount powerUpAmount;
     HealthDisplay healthDisplay;
+    AudioSource powerUpMusic;
 
     // find components needed
     void Start()
     {
+        powerUpMusic = GetComponent<AudioSource>();
         healthDisplay = GameObject.Find("PlayerHealth").GetComponent<HealthDisplay>();
         powerUpAmount = GameObject.Find("PowerUp").GetComponent<PowerUpAmount>();
         playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
@@ -46,6 +48,7 @@ public class PowerUpUse : MonoBehaviour
 
     IEnumerator SpeedIncrease()
     {
+        powerUpMusic.Play(0);
         //retrieves the movespeed value
         float starterSpeed;
         starterSpeed = playerMovement.movespeed;

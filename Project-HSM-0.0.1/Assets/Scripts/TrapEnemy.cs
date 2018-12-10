@@ -56,6 +56,7 @@ public class TrapEnemy : MonoBehaviour
             {
                 playerMovement.movement = true;
                 animator.SetBool("IsDancing", false);
+                respawnTimer = respawnLength;
             }
         }
 
@@ -68,11 +69,8 @@ public class TrapEnemy : MonoBehaviour
                 //enable trapper enemy
                 capsuleCollider.enabled = true;
                 nav.isStopped = false;
+                respawnTimer = respawnLength;
             }
-            //enable player movement
-            playerMovement.movement = true;
-            disabled = false;
-            animator.SetBool("IsDancing", false);
         }
 
         //countdown for timer

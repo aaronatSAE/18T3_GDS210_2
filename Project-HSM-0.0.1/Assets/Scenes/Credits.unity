@@ -580,19 +580,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Character Models - Lorenzo Blum
-
-    Relic Models - Louis Josh and Jack Wells
-
-    Yo-Yo model - Jack Wells
-
-    Water Gun model - Louis Josh
-
-    Scripts - Jefferey Yang
-
-    Level - Louis Josh
-
-    HUD art - Louis Josh'
+  m_Text: "Character Models - Lorenzo Blum\nRelic Models - Louis Josh and Jack Wells\nYo-Yo
+    model - Jack Wells\nWater Gun model - Louis Josh\nScripts - Jeffry Yang\nLevel
+    - Louis Josh\nHUD art - Louis Josh\nPower-up Music - \rdylan roman\r, edited by
+    Jack Wells\n\n"
 --- !u!222 &1836218194
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class TrapEnemy : MonoBehaviour
     PlayerMovement playerMovement;
     Rigidbody rigidPlayer;
     Animator animator;
+    AudioSource trapMusic;
     [SerializeField] private float trapLength;
     [SerializeField] private float trapTimer;
     [SerializeField] private float respawnLength;
@@ -25,6 +26,7 @@ public class TrapEnemy : MonoBehaviour
         capsuleCollider = GetComponent<CapsuleCollider>();
         playerMovement = player.GetComponent<PlayerMovement>();
         nav = GetComponent<NavMeshAgent>();
+        trapMusic = GetComponent<AudioSource>();
         trapLength = 5f;
         trapTimer = trapLength;
         respawnLength = 10f;
@@ -41,11 +43,13 @@ public class TrapEnemy : MonoBehaviour
             if (disabled == false)
             {
                 //if not trap the player and make the player dance
+                trapTimer = trapLength;
                 playerMovement.movement = false;
                 capsuleCollider.enabled = false;
                 nav.isStopped = true;
                 disabled = true;
                 animator.SetBool("IsDancing", true);
+                trapMusic.Play(0);
             }
             //when the time reaches zero enable movement for the player and end the dancing
             if (trapTimer <= 0 && disabled == true)

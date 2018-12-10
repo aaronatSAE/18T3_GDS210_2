@@ -7,18 +7,22 @@ public class DefaultEnemyDeath : MonoBehaviour {
     
     public float enemyHealth;
     private Animator anim;
+    AudioSource damageAudio;
     [SerializeField] private float starterMelee;
     [SerializeField] private float starterTrapper;
     [SerializeField] private float starterRanged;
     [SerializeField] private bool ifDead;
     [SerializeField] private MonoBehaviour[] scripts;
     [SerializeField] private CapsuleCollider cap;
+    private float previousHealth;
+
     //checks what enemy and sets health
     private void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         scripts = gameObject.GetComponents<MonoBehaviour>();
         cap = gameObject.GetComponent<CapsuleCollider>();
+        damageAudio = gameObject.GetComponent<AudioSource>();
         if (gameObject.tag == "MeleeEnemy")
         {
             starterMelee = 2;
@@ -36,6 +40,7 @@ public class DefaultEnemyDeath : MonoBehaviour {
             starterRanged = 1;
             enemyHealth = starterRanged;
         }
+        previousHealth = enemyHealth;
     }
     //checks if player weapon is colliding with enemy
     private void OnCollisionEnter(Collision collision)
@@ -53,6 +58,11 @@ public class DefaultEnemyDeath : MonoBehaviour {
         {
             StartCoroutine("Death");
             enemyHealth = -1000;
+        }
+        //if the health of the enemy decreased play audio
+        if(previousHealth != enemyHealth)
+        {
+            damageAudio.Play(0);
         }
     }
 

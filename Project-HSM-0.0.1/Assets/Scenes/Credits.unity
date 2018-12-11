@@ -366,10 +366,10 @@ RectTransform:
   m_Father: {fileID: 1491894004}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -388.5, y: -0.024994}
-  m_SizeDelta: {x: 1045.8, y: 744.95}
+  m_AnchorMin: {x: 0.021872662, y: 0.125}
+  m_AnchorMax: {x: 0.5, y: 0.957}
+  m_AnchoredPosition: {x: 1.7280006, y: 1.199997}
+  m_SizeDelta: {x: -2.8399963, y: -0.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719126510
 MonoBehaviour:
@@ -543,10 +543,10 @@ RectTransform:
   m_Father: {fileID: 1491894004}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 426.25, y: 50.1}
-  m_SizeDelta: {x: 970.5, y: 644.7}
+  m_AnchorMin: {x: 0.56433547, y: 0.125}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 11.099998, y: 0.020004272}
+  m_SizeDelta: {x: 8.300003, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1836218193
 MonoBehaviour:
@@ -571,7 +571,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 4
     m_MaxSize: 40
     m_Alignment: 0
@@ -583,7 +583,10 @@ MonoBehaviour:
   m_Text: "Character Models - Lorenzo Blum\nRelic Models - Louis Josh and Jack Wells\nYo-Yo
     model - Jack Wells\nWater Gun model - Louis Josh\nScripts - Jeffry Yang\nLevel
     - Louis Josh\nHUD art - Louis Josh\nPower-up Music - \rdylan roman\r, edited by
-    Jack Wells\n\n"
+    Jack Wells\nTrapped Music - machine gaming, edited by Jack Wells\nPlayer Hit -
+    All Music, edited by Jack Wells\nEnemy Hit - \r\nFausto Tomas Gonzalez\r, edited
+    by Jack Wells\nPostprocessing Package - Lorenzo Blum\nWater texture - Lorenzo
+    Blum\n"
 --- !u!222 &1836218194
 CanvasRenderer:
   m_ObjectHideFlags: 0

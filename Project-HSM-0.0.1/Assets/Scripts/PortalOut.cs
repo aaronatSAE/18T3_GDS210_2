@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PortalOut : MonoBehaviour {
     [SerializeField] private string scene;
     //switches scenes when player is inside of the gameobject
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {

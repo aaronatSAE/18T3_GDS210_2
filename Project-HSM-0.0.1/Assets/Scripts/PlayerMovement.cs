@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //make sure the player is on the ground at all times
+        gravity.y = gravity.y - (gravityMulti * Time.deltaTime);
+        controller.Move(gravity * Time.deltaTime);
         //checks if the player is on the ground
         if (controller.isGrounded)
         {
@@ -35,8 +38,5 @@ public class PlayerMovement : MonoBehaviour
                 transform.Translate(moveDirection * Time.deltaTime * movespeed, Space.World);
             }
         }
-        //make sure the player is on the ground at all times
-        gravity.y = gravity.y - (gravityMulti * Time.deltaTime);
-        controller.Move(gravity * Time.deltaTime);
     }
 }
